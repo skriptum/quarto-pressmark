@@ -1,0 +1,28 @@
+---
+pagetitle: Quarto Pressmark
+toc: false
+title-block-style: default
+format: 
+  html: 
+    grid: # default widths
+      body-width: 800px
+      margin-width: 250px
+      sidebar-width: 250px
+listing:
+  - id: listing-features
+    contents: 
+    - ./features/
+    - "!/features/index.qmd"
+    type: grid
+    sort: "date desc"
+    fields: [image, date, title, description] 
+---
+
+
+## Quarto Pressmark
+
+
+
+::: {#listing-features}
+
+:::
