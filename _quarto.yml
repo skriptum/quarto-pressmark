@@ -2,25 +2,31 @@ project:
   type: website
 
 website:
-  favicon: images/favicon.ico
+  favicon: static/favicon.ico
+  title: "Pressmark"
   llms-txt: true
-  open-graph: 
+  open-graph:
     site-name: "Quarto Pressmark"
   site-url: https://mdwm.org/quarto-pressmark/
   description: "Pressmark - elegant, typographic, and minimalistic Quarto theme for blogs and personal websites."
-  search: false
+  search: true
   navbar:
     logo: static/logo.webp
     logo-alt: "Quarto Pressmark Logo"
     collapse-below: lg
+    right: 
+      - text: "Features"
+        href: features/index.qmd
+      - text: "Setup"
+        href: setup.qmd
   page-navigation: true
   back-to-top-navigation: false
   page-footer:
     left: |
-      © 2026, built with <a href='https://quarto.org' target='_blank'>Quarto</a>
-    # right:
-      # If you use a logo, you need to set a feed title where you generate it, 
-      # as setting the title here interferes with the logo
+      © 2026, built with <a href='https://quarto.org' target='_blank'>Quarto</a> and the <a href='https://mdwm.org/quarto-pressmark/' target='_blank'>Pressmark</a> theme
+    right:
+      - text: GitHub
+        href: "https://github.com/skriptum/quarto-pressmark"
 format:
   html:
     theme: pressmark.scss
@@ -28,7 +34,6 @@ format:
     toc-location: body
     html-math-method: katex
     respect-user-color-scheme: true
-    
 
 link-external-icon: false
 link-external-newwindow: true
