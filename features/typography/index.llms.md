@@ -1,0 +1,7 @@
+# Typography
+
+More about typographic quirks like Smallcaps and Drop Caps
+
+- Fonts
+  - [Playfair Display](https://github.com/clauseggers/Playfair)
+  - [Josefin Sans](https://github.com/googlefonts/josefinsans)

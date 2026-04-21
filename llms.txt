@@ -1,8 +1,15 @@
-# Untitled
+# Pressmark
 
 > Pressmark - elegant, typographic, and minimalistic Quarto theme for blogs and personal websites.
 
 ## Pages
 
 - [index](https://mdwm.org/quarto-pressmark/index.llms.md)
-- [features](https://mdwm.org/quarto-pressmark/features.llms.md)
+- [setup](https://mdwm.org/quarto-pressmark/setup.llms.md)
+- [Features](https://mdwm.org/quarto-pressmark/features/index.llms.md)
+- [Typography](https://mdwm.org/quarto-pressmark/features/typography/index.llms.md)
+- [Banners and TOC](https://mdwm.org/quarto-pressmark/features/banners/index.llms.md)
+- [Citations](https://mdwm.org/quarto-pressmark/features/citations/index.llms.md)
+- [Markup Reference](https://mdwm.org/quarto-pressmark/features/markdown/index.llms.md)
+- [Listings](https://mdwm.org/quarto-pressmark/features/listings/index.llms.md)
+- [Customization](https://mdwm.org/quarto-pressmark/features/customization/index.llms.md)

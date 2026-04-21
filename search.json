@@ -2,22 +2,36 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "",
+    "title": "Pressmark",
     "section": "",
-    "text": "No matching items"
+    "text": "Pressmark - an elegant, typographic theme for Quarto websites. Inspired by newspapers like The Atlantic and the Financial Times as well as Edward Tufte’s design principles. Featuring good defaults, beatiful fonts, and a lot of customization. Made for sites centered around text, that do not want to compromise good design.\n\nGitHub\n\n\nQuickstart\nLearn more in the Setup Guide\n\n\nFeatures\n\n\n\n\n\n\n\n\nCitations\n\n\nSome tips for academics using Quarto\n\n\n\n\n\n\n\n\n\n\nBanners and TOC\n\n\nA more prominent way to present author, title and date in the title block\n\n\n\n\n\n\n\n\n\n\nMarkup Reference\n\n\nA showcase of what things look like with Pressmark\n\n\n\n\n\n\n\n\n\n\nTypography\n\n\nMore about typographic quirks like Smallcaps and Drop Caps\n\n\n\n\n\n\n\n\n\n\nListings\n\n\nIntroduction to a very useful quarto feature\n\n\n\n\n\n\n\n\n\n\nCustomization\n\n\nMaking Pressmark work for you (e.g with a Dark Mode)\n\n\n\n\n\nNo matching items\n\n\nPressmark noun: A notation or figure in the margin of a printed sheet indicating the press on which it was printed.\nThe American Heritage® Dictionary of the English Language, 5th Edition."
   },
   {
-    "objectID": "index.html#quarto-pressmark",
-    "href": "index.html#quarto-pressmark",
-    "title": "",
+    "objectID": "features/index.html",
+    "href": "features/index.html",
+    "title": "Features",
     "section": "",
-    "text": "No matching items"
+    "text": "Citations\n\n\nSome tips for academics using Quarto\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBanners and TOC\n\n\nA more prominent way to present author, title and date in the title block\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMarkup Reference\n\n\nA showcase of what things look like with Pressmark\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTypography\n\n\nMore about typographic quirks like Smallcaps and Drop Caps\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nListings\n\n\nIntroduction to a very useful quarto feature\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCustomization\n\n\nMaking Pressmark work for you (e.g with a Dark Mode)\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "features.html",
-    "href": "features.html",
-    "title": "",
+    "objectID": "features/typography/index.html",
+    "href": "features/typography/index.html",
+    "title": "Typography",
     "section": "",
-    "text": "About the theme\n\nFonts\n\nPlayfair Display\nJosefin Sans\n\nColor\n\nslightly off white background\nAdjustable, good defaults in light and dark mode\n\nTypographic elements\n\nDrop Caps, small caps, printers ornaments, etc.\n\n\nInspiration\n\nelegant news sites like The Gothamist and The Financial Times\nas well as classics like Edward Tufte’s design principles\n\nFeatures\n\nMarkdown Kitchen Sink\nTOC and Banner\nChanging Colors (a.k.a a Dark Theme)\nSmall Caps and Drop Caps\nListings\nCitations\nAnalytics"
+    "text": "Fonts\n\nPlayfair Display\nJosefin Sans"
+  },
+  {
+    "objectID": "features/markdown/index.html",
+    "href": "features/markdown/index.html",
+    "title": "Markup Reference",
+    "section": "",
+    "text": "A simple Markdown Blockquote\n&gt; 'Classic' – a book which people praise and don’t read. \n&gt; \n&gt; ***Mark Twain***\nTurns into this:\n\n‘Classic’ – a book which people praise and don’t read.\nMark Twain\n\nNote the ***, transforming the name into smallcaps. You can read more about it in the typography explanation."
+  },
+  {
+    "objectID": "features/markdown/index.html#footnotes",
+    "href": "features/markdown/index.html#footnotes",
+    "title": "Markup Reference",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nMy reference.↩︎\nEvery new line should be prefixed with 2 spaces.\nThis allows you to have a footnote with multiple lines.↩︎\nNamed footnotes will still render with numbers instead of the text but allow easier identification and linking.\nThis footnote also has been made with a different syntax using 4 spaces for new lines.↩︎"
   }
 ]

@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="LOREM">
 
-<title>404 – Pressmark</title>
+<title>Features – Pressmark</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,24 +27,26 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="/quarto-pressmark/site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="/quarto-pressmark/site_libs/quarto-nav/headroom.min.js"></script>
-<script src="/quarto-pressmark/site_libs/clipboard/clipboard.min.js"></script>
-<script src="/quarto-pressmark/site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="/quarto-pressmark/site_libs/quarto-search/fuse.min.js"></script>
-<script src="/quarto-pressmark/site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="/quarto-pressmark/">
-<link href="/quarto-pressmark/./static/favicon.ico" rel="icon">
-<script src="/quarto-pressmark/site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="/quarto-pressmark/site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="/quarto-pressmark/site_libs/quarto-html/popper.min.js"></script>
-<script src="/quarto-pressmark/site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="/quarto-pressmark/site_libs/quarto-html/anchor.min.js"></script>
-<link href="/quarto-pressmark/site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="/quarto-pressmark/site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="/quarto-pressmark/site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="/quarto-pressmark/site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="/quarto-pressmark/site_libs/bootstrap/bootstrap-c6256b8e36ad592bd45e08bdf6efcb0c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../static/favicon.ico" rel="icon">
+<script src="../site_libs/quarto-listing/list.min.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-c6256b8e36ad592bd45e08bdf6efcb0c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -71,10 +74,82 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing-features .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
 
-<meta property="og:title" content="404">
-<meta property="og:description" content="Pressmark - elegant, typographic, and minimalistic Quarto theme for blogs and personal websites.">
+    const options = {
+      valueNames: ['listing-image','listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing-features'] = new List('listing-listing-features', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<meta property="og:title" content="Features – Pressmark">
+<meta property="og:description" content="LOREM">
 <meta property="og:site_name" content="Pressmark">
 </head>
 
@@ -85,11 +160,11 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="/quarto-pressmark/index.html" class="navbar-brand navbar-brand-logo">
-    <img src="/quarto-pressmark/static/logo.webp" alt="Quarto Pressmark Logo" class="navbar-logo light-content">
-    <img src="/quarto-pressmark/static/logo.webp" alt="Quarto Pressmark Logo" class="navbar-logo dark-content">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../static/logo.webp" alt="Quarto Pressmark Logo" class="navbar-logo light-content">
+    <img src="../static/logo.webp" alt="Quarto Pressmark Logo" class="navbar-logo dark-content">
     </a>
-    <a class="navbar-brand" href="/quarto-pressmark/index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Pressmark</span>
     </a>
   </div>
@@ -100,11 +175,11 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="/quarto-pressmark/features/index.html"> 
+    <a class="nav-link active" href="../features/index.html" aria-current="page"> 
 <span class="menu-text">Features</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="/quarto-pressmark/setup.html"> 
+    <a class="nav-link" href="../setup.html"> 
 <span class="menu-text">Setup</span></a>
   </li>  
 </ul>
@@ -120,19 +195,155 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Features</h1>
+</div>
+
+<div>
+  <div class="description">
+    LOREM
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
 
 
 
 
-<section id="page-not-found" class="level1">
-<h1>404 - Page not found</h1>
-<p>Seems like the page you were looking for does not exist anymore → let’s go <a href="/quarto-pressmark/./index.html"><strong><em>home</em></strong></a></p>
 
 
-</section>
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing-features">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1776775621858" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<div class="thumbnail"><a href="../features/citations/index.html" class="no-external">
 
-</main> <!-- /main -->
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../features/citations/index.html" class="no-external">Citations</a>
+</h3>
+<div class="delink listing-description"><a href="../features/citations/index.html" class="no-external">
+<p>Some tips for academics using Quarto</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="../features/citations/index.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-listing-file-modified-sort="1776775621858" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<div class="thumbnail"><a href="../features/banners/index.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../features/banners/index.html" class="no-external">Banners and TOC</a>
+</h3>
+<div class="delink listing-description"><a href="../features/banners/index.html" class="no-external">
+<p>A more prominent way to present author, title and date in the title block</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="../features/banners/index.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-listing-file-modified-sort="1776775621858" data-listing-reading-time-sort="3" data-listing-word-count-sort="599">
+<div class="thumbnail"><a href="../features/markdown/index.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../features/markdown/index.html" class="no-external">Markup Reference</a>
+</h3>
+<div class="delink listing-description"><a href="../features/markdown/index.html" class="no-external">
+<p>A showcase of what things look like with Pressmark</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="../features/markdown/index.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="3" data-listing-file-modified-sort="1776775621858" data-listing-reading-time-sort="1" data-listing-word-count-sort="10">
+<div class="thumbnail"><a href="../features/typography/index.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../features/typography/index.html" class="no-external">Typography</a>
+</h3>
+<div class="delink listing-description"><a href="../features/typography/index.html" class="no-external">
+<p>More about typographic quirks like Smallcaps and Drop Caps</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="../features/typography/index.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="4" data-listing-file-modified-sort="1776775621858" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<div class="thumbnail"><a href="../features/listings/index.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../features/listings/index.html" class="no-external">Listings</a>
+</h3>
+<div class="delink listing-description"><a href="../features/listings/index.html" class="no-external">
+<p>Introduction to a very useful quarto feature</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="../features/listings/index.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="5" data-listing-file-modified-sort="1776775621858" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<div class="thumbnail"><a href="../features/customization/index.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../features/customization/index.html" class="no-external">Customization</a>
+</h3>
+<div class="delink listing-description"><a href="../features/customization/index.html" class="no-external">
+<p>Making Pressmark work for you (e.g with a Dark Mode)</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="../features/customization/index.html" class="no-external">
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="A showcase of what things look like with Pressmark">
 
-<title>404 – Pressmark</title>
+<title>Markup Reference – Pressmark</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -23,27 +24,62 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="/quarto-pressmark/site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="/quarto-pressmark/site_libs/quarto-nav/headroom.min.js"></script>
-<script src="/quarto-pressmark/site_libs/clipboard/clipboard.min.js"></script>
-<script src="/quarto-pressmark/site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="/quarto-pressmark/site_libs/quarto-search/fuse.min.js"></script>
-<script src="/quarto-pressmark/site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="/quarto-pressmark/">
-<link href="/quarto-pressmark/./static/favicon.ico" rel="icon">
-<script src="/quarto-pressmark/site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="/quarto-pressmark/site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="/quarto-pressmark/site_libs/quarto-html/popper.min.js"></script>
-<script src="/quarto-pressmark/site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="/quarto-pressmark/site_libs/quarto-html/anchor.min.js"></script>
-<link href="/quarto-pressmark/site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="/quarto-pressmark/site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="/quarto-pressmark/site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="/quarto-pressmark/site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="/quarto-pressmark/site_libs/bootstrap/bootstrap-c6256b8e36ad592bd45e08bdf6efcb0c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../static/favicon.ico" rel="icon">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-c6256b8e36ad592bd45e08bdf6efcb0c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -73,23 +109,23 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<meta property="og:title" content="404">
-<meta property="og:description" content="Pressmark - elegant, typographic, and minimalistic Quarto theme for blogs and personal websites.">
+<meta property="og:title" content="Markup Reference – Pressmark">
+<meta property="og:description" content="A showcase of what things look like with Pressmark">
 <meta property="og:site_name" content="Pressmark">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="/quarto-pressmark/index.html" class="navbar-brand navbar-brand-logo">
-    <img src="/quarto-pressmark/static/logo.webp" alt="Quarto Pressmark Logo" class="navbar-logo light-content">
-    <img src="/quarto-pressmark/static/logo.webp" alt="Quarto Pressmark Logo" class="navbar-logo dark-content">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../static/logo.webp" alt="Quarto Pressmark Logo" class="navbar-logo light-content">
+    <img src="../../static/logo.webp" alt="Quarto Pressmark Logo" class="navbar-logo dark-content">
     </a>
-    <a class="navbar-brand" href="/quarto-pressmark/index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Pressmark</span>
     </a>
   </div>
@@ -100,11 +136,11 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="/quarto-pressmark/features/index.html"> 
+    <a class="nav-link" href="../../features/index.html"> 
 <span class="menu-text">Features</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="/quarto-pressmark/setup.html"> 
+    <a class="nav-link" href="../../setup.html"> 
 <span class="menu-text">Setup</span></a>
   </li>  
 </ul>
@@ -118,21 +154,214 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Markup Reference</h1>
+</div>
+
+<div>
+  <div class="description">
+    <p>A showcase of what things look like with Pressmark</p>
+  </div>
+</div>
 
 
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
 
 
-<section id="page-not-found" class="level1">
-<h1>404 - Page not found</h1>
-<p>Seems like the page you were looking for does not exist anymore → let’s go <a href="/quarto-pressmark/./index.html"><strong><em>home</em></strong></a></p>
+</header>
+
+<nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#blockquotes" id="toc-blockquotes">Blockquotes</a></li>
+  <li><a href="#code-blocks" id="toc-code-blocks">Code Blocks</a></li>
+  <li><a href="#tables" id="toc-tables">Tables</a></li>
+  <li><a href="#footnotes" id="toc-footnotes">Footnotes</a></li>
+  <li><a href="#horizontal-rule" id="toc-horizontal-rule">Horizontal Rule</a></li>
+  <li><a href="#lists" id="toc-lists">Lists</a></li>
+  <li><a href="#buttons" id="toc-buttons">Buttons</a></li>
+  </ul>
+</nav>
+<section id="blockquotes" class="level1">
+<h1>Blockquotes</h1>
+<p>A simple Markdown Blockquote</p>
+<pre><code>&gt; 'Classic' – a book which people praise and don’t read. 
+&gt; 
+&gt; ***Mark Twain***</code></pre>
+<p>Turns into this:</p>
+<blockquote class="blockquote">
+<p>‘Classic’ – a book which people praise and don’t read.</p>
+<p><strong><em>Mark Twain</em></strong></p>
+</blockquote>
+<p>Note the <code>***</code>, transforming the name into <em>smallcaps</em>. You can read more about it in the typography explanation.</p>
+</section>
+<section id="code-blocks" class="level1">
+<h1>Code Blocks</h1>
+<p>Here’s a python code block:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Hello World"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>with an optional filename:</p>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>matplotlib.py</strong></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3" data-filename="matplotlib.py"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>plt.plot([<span class="dv">1</span>,<span class="dv">23</span>,<span class="dv">2</span>,<span class="dv">4</span>])</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>and with line numbers:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb4-2"><a href="#cb4-2"></a>plt.plot([<span class="dv">1</span>,<span class="dv">23</span>,<span class="dv">2</span>,<span class="dv">4</span>])</span>
+<span id="cb4-3"><a href="#cb4-3"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="tables" class="level1">
+<h1>Tables</h1>
+<p>Here’s an example of a table</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Header</th>
+<th>Another header</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>field 1</td>
+<td>something</td>
+</tr>
+<tr class="even">
+<td>field 2</td>
+<td>something else</td>
+</tr>
+<tr class="odd">
+<td>field 3</td>
+<td>something different</td>
+</tr>
+</tbody>
+</table>
+<p>created with:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Header  <span class="pp">|</span> Another header <span class="pp">|</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="pp">|---------|----------------|</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> field 1 <span class="pp">|</span> something      <span class="pp">|</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> field 2 <span class="pp">|</span> something else <span class="pp">|</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="footnotes" class="level1">
+<h1>Footnotes</h1>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>Here is a simple footnote<span class="ot">[^1]</span>.</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>A footnote can also have multiple lines<span class="ot">[^2]</span>.  </span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>You can also use words, to fit your writing style more closely<span class="ot">[^note]</span>.</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="ot">[^1]: </span>My reference.</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="ot">[^2]: </span>Every new line should be prefixed with 2 spaces.  </span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>  This allows you to have a footnote with multiple lines.</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="ot">[^note]</span>:</span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>    Named footnotes will still render with numbers instead of the text but allow easier identification and linking.  </span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>    This footnote also has been made with a different syntax using 4 spaces for new lines.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Here is a simple footnote<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>.</p>
+<p>A footnote can also have multiple lines<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>.</p>
+<p>You can also use words, to fit your writing style more closely<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>.</p>
+</section>
+<section id="horizontal-rule" class="level1">
+<h1>Horizontal Rule</h1>
+<p>Sometimes Horizontal Rules come in handy. Thats why <strong><em>Pressmark</em></strong> has a custom design for them, inspired by the <a href="https://en.wikipedia.org/wiki/Dinkus">dinkus</a> you often find in books</p>
+<hr>
+</section>
+<section id="lists" class="level1">
+<h1>Lists</h1>
+<section id="bullet-lists" class="level4">
+<h4 class="anchored" data-anchor-id="bullet-lists">Bullet Lists</h4>
+<pre><code>- Bullet lists in Markdown are pretty straightforward.
+- A bunch of bullet points.
+  - Nested bullets should be indented by two or more spaces.
+  - They can just "show up" inline with the rest of the list. Adding blank lines
+    before and after is also permitted.</code></pre>
+<ul>
+<li>Bullet lists in Markdown are pretty straightforward.</li>
+<li>A bunch of bullet points.
+<ul>
+<li>Nested bullets should be indented by two or more spaces.</li>
+<li>They can just “show up” inline with the rest of the list. Adding blank lines before and after is also permitted.</li>
+</ul></li>
+</ul>
+</section>
+<section id="numbered-lists" class="level4">
+<h4 class="anchored" data-anchor-id="numbered-lists">Numbered Lists</h4>
+<pre><code>1. Numbered lists are not complicated.
+2. They do exactly what you think they do.</code></pre>
+<ol type="1">
+<li>Numbered lists are not complicated.</li>
+<li>They do exactly what you think they do.</li>
+</ol>
+</section>
+<section id="multi-paragraph-lists" class="level4">
+<h4 class="anchored" data-anchor-id="multi-paragraph-lists">Multi-paragraph Lists</h4>
+<pre><code>- It is also possible to have multiple paragraphs in a bullet.
+
+  Make sure to have a blank line between the paragraphs, and to indent the
+  paragraphs to the correct level.
+- Note that these lists are less "dense"</code></pre>
+<ul>
+<li><p>It is also possible to have multiple paragraphs in a bullet.</p>
+<p>Make sure to have a blank line between the paragraphs, and to indent the paragraphs to the correct level.</p></li>
+<li><p>Note that these lists are less “dense”</p></li>
+</ul>
+</section>
+<section id="definition-lists" class="level4">
+<h4 class="anchored" data-anchor-id="definition-lists">Definition Lists</h4>
+<pre><code>Definition Lists
+:  An extremely useful tool for describing stuff.
+
+Complicated Term
+:  Definition</code></pre>
+<dl>
+<dt>Definition Lists</dt>
+<dd>
+An extremely useful tool for describing stuff.
+</dd>
+<dt>Complicated Term</dt>
+<dd>
+Definition
+</dd>
+</dl>
+</section>
+</section>
+<section id="buttons" class="level1">
+<h1>Buttons</h1>
+<p>Technically not standard markdown, but still useful. Just insert a standard HTML button in your prose…</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">button</span><span class="dt">&gt;</span> Click Me <span class="dt">&lt;/</span><span class="kw">button</span><span class="dt">&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>… and it will be styled like this:</p>
+<button>
+Click Me
+</button>
 
 
 </section>
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>My reference.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Every new line should be prefixed with 2 spaces.<br>
+This allows you to have a footnote with multiple lines.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Named footnotes will still render with numbers instead of the text but allow easier identification and linking.<br>
+This footnote also has been made with a different syntax using 4 spaces for new lines.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
