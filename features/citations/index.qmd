@@ -1,0 +1,4 @@
+---
+title: Citations
+description: Some tips for academics using Quarto
+---

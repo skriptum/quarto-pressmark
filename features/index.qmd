@@ -1,0 +1,10 @@
+---
+title: Features
+description: "LOREM"
+toc: false
+listing:
+  - id: listing-features
+    type: default
+    sort: "date desc"
+    fields: [image, title, description] 
+---

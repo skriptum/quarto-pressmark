@@ -1,0 +1,4 @@
+---
+title: Banners and TOC
+description: A more prominent way to present author, title and date in the title block
+---
