@@ -79,19 +79,39 @@ $grid-body-width: 650px !default;
     font-weight: 800;
     font-style: normal;
     color: $font-color;
+
+    // dont show it on mobile if there is a logo, to save space
+    @media (max-width: 767.98px) {
+      display: none;
+    }
   }
   a:hover {
     text-decoration: underline solid $highlight-color;
   }
-  .navbar-brand {
-    // position in middle always
-    position: absolute;
-    left: 50%;
-    margin-left: -30px !important;  /* 50% of your logo width */
-    .navbar-logo {
-      max-height: 60px;
-    }
+
+  .navbar-toggler {
+    // on the right side on mobile
+    // margin-left: auto;
+    order: 4;
   }
+  // #quarto-search {
+  //   @media (max-width: 767.98px) {
+  //     // margin-left: 0px !important;
+  //     order: 3;
+  //   }
+  // }
+  // FOR positioning logo in the middle (no title then!)
+  // .navbar-brand-container {
+  //   position in middle always
+  //   position: absolute;
+  //   left: 50%;
+  //   margin-left: -30px !important;  /* 50% of your logo width */
+
+  //   .navbar-brand-logo {
+  //     max-height: 60px;
+  //     max-width: 120px;
+  //   }
+  // }
 }
 
 .footer {
@@ -242,6 +262,10 @@ nav:not(.toc-active)#TOC {
   color: $font-color;
 }
 
+.quarto-listing-container-default {
+  margin-right: 0px !important;
+}
+
 // General
 
 body {
@@ -314,7 +338,7 @@ em hr {
   width: 100%;
 }
 
-button:not(.code-copy-button, .navbar-toggler)  {
+button:not([class])  {
   border: 1px solid $highlight-color;
   padding: 0.2em 1em 0.05em 1em;
   border-radius: 0px;
@@ -366,18 +390,15 @@ pre {
   border-left: 5px solid $highlight-color;
   padding-left: 1rem;
   font-family: $font-family-headings;
+  font-size: $font-size-base;
   border-radius: .25rem;
   background-color: $primary-color-shade;
   text-align: center;
   color: $font-color;
   margin: 2em 2vw 2em 2vw;
 
-  em {
-  color: $highlight-color;
-  font-family: $font-family-smallcaps;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 0.85em;
+  strong em {
+    color: $highlight-color;
   }
 }
 

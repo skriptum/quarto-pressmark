@@ -1,5 +1,4 @@
 ---
-pagetitle: Quarto Pressmark
 toc: false
 title-block-style: default
 format: 
@@ -18,11 +17,24 @@ listing:
     fields: [image, date, title, description] 
 ---
 
+***`P`ressmark*** - an elegant, typographic theme for Quarto websites. Inspired by newspapers like [The Atlantic](https://www.theatlantic.com/) and the [Financial Times](https://www.ft.com/) as well as [Edward Tufte's design principles](https://edwardtufte.github.io/tufte-css/). Featuring good defaults, beatiful fonts, and a lot of customization. Made for sites centered around text, that do not want to compromise good design.
 
-## Quarto Pressmark
+<button href="https://github.com/skriptum/quarto-pressmark"> GitHub </button> 
+
+### Quickstart
 
 
+
+
+Learn more in the [Setup Guide](setup.qmd)
+
+
+### Features
 
 ::: {#listing-features}
 
 :::
+
+> **Pressmark** _noun_: A notation or figure in the margin of a printed sheet indicating the press on which it was printed. 
+>
+> ***The American Heritage® Dictionary of the English Language, 5th Edition.***
