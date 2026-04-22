@@ -12,7 +12,7 @@ website:
   search: true
   navbar:
     title: "Pressmark"
-    logo: static/logo.webp
+    logo: static/P.png
     logo-alt: "Quarto Pressmark Logo"
     collapse-below: lg
     right: 
