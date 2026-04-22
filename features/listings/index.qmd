@@ -3,3 +3,4 @@ title: Listings
 description: Introduction to a very useful quarto feature
 ---
 
+![Mondrian: Tableau I](mondrian.jpg)

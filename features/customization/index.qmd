@@ -2,3 +2,5 @@
 title: Customization
 description: Making Pressmark work for you (e.g with a Dark Mode)
 ---
+
+![Swiss Design Color Picker](colorpicker.jpg)

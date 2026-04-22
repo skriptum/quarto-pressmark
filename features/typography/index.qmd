@@ -4,7 +4,9 @@ description: |
     More about typographic quirks like Smallcaps and Drop Caps
 ---
 
+![Type Specimen for Universal type](specimen.png)
 
+<!-- ![Letters](letters.png) -->
 
 - Fonts
   - [Playfair Display](https://github.com/clauseggers/Playfair)

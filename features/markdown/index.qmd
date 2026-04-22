@@ -4,6 +4,8 @@ description: |
     A showcase of what things look like with Pressmark
 ---
 
+![Gebrauchsgraphik Magazine Nr. 6-60](gebrauchsgraphik.jpg)
+
 # Blockquotes
 
 A simple Markdown Blockquote 
