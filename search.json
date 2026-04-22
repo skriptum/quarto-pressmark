@@ -2,16 +2,16 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Pressmark",
+    "title": "Quarto Pressmark",
     "section": "",
-    "text": "Pressmark - an elegant, typographic theme for Quarto websites. Inspired by newspapers like The Atlantic and the Financial Times as well as Edward Tufte’s design principles. Featuring good defaults, beatiful fonts, and a lot of customization. Made for sites centered around text, that do not want to compromise good design.\n\nGitHub\n\n\nQuickstart\nLearn more in the Setup Guide\n\n\nFeatures\n\n\n\n\n\n\n\n\nCitations\n\n\nSome tips for academics using Quarto\n\n\n\n\n\n\n\n\n\n\nBanners and Table of Contents\n\n\nA more prominent way to present author, title and date in the title block\n\n\n\n\n\n\n\n\n\n\nMarkup Reference\n\n\nA showcase of what things look like with Pressmark\n\n\n\n\n\n\n\n\n\n\nTypography\n\n\nMore about typographic quirks like Smallcaps and Drop Caps\n\n\n\n\n\n\n\n\n\n\nListings\n\n\nIntroduction to a very useful quarto feature\n\n\n\n\n\n\n\n\n\n\nCustomization\n\n\nMaking Pressmark work for you (e.g with a Dark Mode)\n\n\n\n\n\nNo matching items\n\n\nPressmark noun: A notation or figure in the margin of a printed sheet indicating the press on which it was printed.\nThe American Heritage® Dictionary of the English Language, 5th Edition."
+    "text": "Pressmark - an elegant, typographic theme for Quarto websites. Inspired by newspapers like The Atlantic and the Financial Times as well as Edward Tufte’s design principles. Made for sites centered around text, that do not want to compromise on good design. Feauturing carefully selected fonts, well thought-trough default styling, and a bunch of quirks.\nGitHub Showcase\n\nQuickstart\nLearn more in the Setup Guide\n\n\nFeatures\n\n\n\n\n\n\n\n\nBanners and Table of Contents\n\n\nA more prominent way to present author, title and date in the title block\n\n\n\n\n\n\n\n\n\n\nCustomization\n\n\nMaking Pressmark work for you (e.g with a Dark Mode)\n\n\n\n\n\n\n\n\n\n\nListings\n\n\nIntroduction to a very useful quarto feature\n\n\n\n\n\n\n\n\n\n\nTypography\n\n\nMore about typographic quirks like Smallcaps and Drop Caps\n\n\n\n\n\n\n\n\n\n\nMarkup Reference\n\n\nA showcase of what things look like with Pressmark\n\n\n\n\n\n\n\n\n\n\nCitations\n\n\nSome tips for academics using Quarto\n\n\n\n\n\nNo matching items\n\n\nPressmark noun: A notation or figure in the margin of a printed sheet indicating the press on which it was printed.\nThe American Heritage® Dictionary of the English Language, 5th Edition."
   },
   {
     "objectID": "features/index.html",
     "href": "features/index.html",
     "title": "Features",
     "section": "",
-    "text": "Citations\n\n\nSome tips for academics using Quarto\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBanners and Table of Contents\n\n\nA more prominent way to present author, title and date in the title block\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMarkup Reference\n\n\nA showcase of what things look like with Pressmark\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTypography\n\n\nMore about typographic quirks like Smallcaps and Drop Caps\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nListings\n\n\nIntroduction to a very useful quarto feature\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCustomization\n\n\nMaking Pressmark work for you (e.g with a Dark Mode)\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Banners and Table of Contents\n\n\nA more prominent way to present author, title and date in the title block\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCustomization\n\n\nMaking Pressmark work for you (e.g with a Dark Mode)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nListings\n\n\nIntroduction to a very useful quarto feature\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTypography\n\n\nMore about typographic quirks like Smallcaps and Drop Caps\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMarkup Reference\n\n\nA showcase of what things look like with Pressmark\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCitations\n\n\nSome tips for academics using Quarto\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "features/typography/index.html",
@@ -21,11 +21,25 @@
     "text": "Type Specimen for Universal type\n\n\n\n\nFonts\n\nPlayfair Display\nJosefin Sans"
   },
   {
-    "objectID": "features/citations/index.html",
-    "href": "features/citations/index.html",
-    "title": "Citations",
+    "objectID": "features/customization/index.html",
+    "href": "features/customization/index.html",
+    "title": "Customization",
     "section": "",
-    "text": "New York Public Library Floor Plan"
+    "text": "Swiss Design Color Picker"
+  },
+  {
+    "objectID": "features/banners/index.html",
+    "href": "features/banners/index.html",
+    "title": "Banners and Table of Contents",
+    "section": "",
+    "text": "Table from Graphis diagrams: The Graphic Visualization of Abstract Data"
+  },
+  {
+    "objectID": "features/listings/index.html",
+    "href": "features/listings/index.html",
+    "title": "Listings",
+    "section": "",
+    "text": "Mondrian: Tableau I"
   },
   {
     "objectID": "features/markdown/index.html",
@@ -42,17 +56,10 @@
     "text": "Footnotes\n\n\nMy reference.↩︎\nEvery new line should be prefixed with 2 spaces.\nThis allows you to have a footnote with multiple lines.↩︎\nNamed footnotes will still render with numbers instead of the text but allow easier identification and linking.\nThis footnote also has been made with a different syntax using 4 spaces for new lines.↩︎"
   },
   {
-    "objectID": "features/listings/index.html",
-    "href": "features/listings/index.html",
-    "title": "Listings",
+    "objectID": "features/citations/index.html",
+    "href": "features/citations/index.html",
+    "title": "Citations",
     "section": "",
-    "text": "Mondrian: Tableau I"
-  },
-  {
-    "objectID": "features/customization/index.html",
-    "href": "features/customization/index.html",
-    "title": "Customization",
-    "section": "",
-    "text": "Swiss Design Color Picker"
+    "text": "New York Public Library Floor Plan"
   }
 ]
