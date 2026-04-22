@@ -12,6 +12,10 @@ A showcase of what things look like with Pressmark
 - [Lists](#lists)
 - [Buttons](#buttons)
 
+![](gebrauchsgraphik.jpg)
+
+Gebrauchsgraphik Magazine Nr. 6-60
+
 # Blockquotes
 
 A simple Markdown Blockquote

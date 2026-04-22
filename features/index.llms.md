@@ -6,7 +6,7 @@ LOREM
 
 Some tips for academics using Quarto
 
-### [Banners and TOC](../features/banners/index.llms.md)
+### [Banners and Table of Contents](../features/banners/index.llms.md)
 
 A more prominent way to present author, title and date in the title block
 

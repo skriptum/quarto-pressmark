@@ -12,7 +12,7 @@ Learn more in the [Setup Guide](setup.llms.md)
 
 Some tips for academics using Quarto
 
-##### Banners and TOC
+##### Banners and Table of Contents
 
 A more prominent way to present author, title and date in the title block
 
