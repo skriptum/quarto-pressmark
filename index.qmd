@@ -17,9 +17,12 @@ listing:
     fields: [image, date, title, description] 
 ---
 
-***`P`ressmark*** - an elegant, typographic theme for Quarto websites. Inspired by newspapers like [The Atlantic](https://www.theatlantic.com/) and the [Financial Times](https://www.ft.com/) as well as [Edward Tufte's design principles](https://edwardtufte.github.io/tufte-css/). Featuring good defaults, beatiful fonts, and a lot of customization. Made for sites centered around text, that do not want to compromise good design.
+***`P`ressmark*** - an elegant, typographic theme for Quarto websites. Inspired by newspapers like [The Atlantic](https://www.theatlantic.com/) and the [Financial Times](https://www.ft.com/) as well as [Edward Tufte's design principles](https://edwardtufte.github.io/tufte-css/). Made for sites centered around text, that do not want to compromise on good design. Feauturing carefully selected fonts, well thought-trough default styling, and a bunch of quirks.
 
-<button href="https://github.com/skriptum/quarto-pressmark"> GitHub </button> 
+[`<button>GitHub</button>`{=html}](https://github.com/skriptum/quarto-pressmark)
+[`<button>Showcase</button>`{=html}](https://mdwm.org)
+
+
 
 ### Quickstart
 

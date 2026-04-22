@@ -3,7 +3,7 @@ project:
 
 website:
   favicon: static/favicon.ico
-  title: "Pressmark"
+  title: "Quarto Pressmark"
   llms-txt: true
   open-graph:
     site-name: "Quarto Pressmark"
@@ -11,6 +11,7 @@ website:
   description: "Pressmark - elegant, typographic, and minimalistic Quarto theme for blogs and personal websites."
   search: true
   navbar:
+    title: "Pressmark"
     logo: static/logo.webp
     logo-alt: "Quarto Pressmark Logo"
     collapse-below: lg
