@@ -28,13 +28,13 @@ website:
     right:
       - text: GitHub
         href: "https://github.com/skriptum/quarto-pressmark"
+
+# HTML format options
 format:
   html:
-    theme: pressmark.scss
-    toc: true
-    toc-location: body
-    html-math-method: katex
-    respect-user-color-scheme: true
-
-link-external-icon: false
-link-external-newwindow: true
+    theme: pressmark.scss # magic line to use the custom SCSS theme !IMPORTANT!
+    toc: true # show the table of contents by default
+    toc-location: body # show the TOC in the body of the page, better for mobile devices
+    html-math-method: katex # KaTex is faster and smaller than MathJax
+    link-external-icon: false # enable if you want to show an icon next to external links
+    link-external-newwindow: true # open external links in a new window
