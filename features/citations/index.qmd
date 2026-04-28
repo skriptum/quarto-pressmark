@@ -1,6 +1,0 @@
----
-title: Citations
-description: Some tips for academics using Quarto
----
-
-![New York Public Library Floor Plan](library.png)
