@@ -2,23 +2,23 @@
   {
     "listing": "/index.html",
     "items": [
-      "/features/banners/index.html",
       "/features/customization/index.html",
+      "/features/academics/index.html",
       "/features/listings/index.html",
       "/features/typography/index.html",
       "/features/markdown/index.html",
-      "/features/citations/index.html"
+      "/features/banners/index.html"
     ]
   },
   {
     "listing": "/features/index.html",
     "items": [
-      "/features/banners/index.html",
       "/features/customization/index.html",
+      "/features/academics/index.html",
       "/features/listings/index.html",
       "/features/typography/index.html",
       "/features/markdown/index.html",
-      "/features/citations/index.html"
+      "/features/banners/index.html"
     ]
   }
 ]

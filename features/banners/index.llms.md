@@ -1,7 +1,39 @@
-# Banners and Table of Contents
+## On this page
 
-A more prominent way to present author, title and date in the title block
+- [Banner](#banner)
+- [Table of Contents](#table-of-contents)
 
 ![](graphis.jpg)
 
-Table from Graphis diagrams: The Graphic Visualization of Abstract Data
+Table from “Graphis diagrams: The Graphic Visualization of Abstract Data”
+
+## Banner
+
+If you want a more prominent, visually distinct title area—like the banner shown above—you can enable a title block banner on a per-document basis:
+
+``` yaml
+title-block-banner: true
+```
+
+This adds a full-width header section that helps your page stand out and creates a clearer visual hierarchy for your title and metadata. For more details and customization options, see the [Quarto documentation](https://quarto.org/docs/authoring/title-blocks.html#title-banners)
+
+## Table of Contents
+
+This page demonstrates two types of tables of contents (TOC): a floating TOC on the right that follows your scroll position, and a fixed TOC at the top of the page.
+
+You can control TOC behavior with several options ([see the full reference](https://quarto.org/docs/output-formats/html-basics.html#table-of-contents)):
+
+``` yaml
+toc: true
+toc-depth: 2
+toc-location: right-body  # alternatives: "right", "left", "body"
+```
+
+- `toc`: Enables the table of contents.
+- `toc-depth`: Controls how many heading levels are included.
+- `toc-location`: Controls placement:
+  - `right` or `left` creates a floating sidebar TOC.
+  - `body` places the TOC directly in the document.
+  - `right-body` combines both approaches.
+
+**Note:** Floating TOCs are not displayed on mobile devices. If it’s important that readers always have an overview of the page structure, consider including a body TOC as well.

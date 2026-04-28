@@ -24,6 +24,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -41,10 +76,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-bdf67b448a403dde36248dfdc89c95ef.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-d1213341c801261986e8a31d7492830b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-a2cd1274fb6c57e4d4a26f9e855a24ed.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -80,7 +115,7 @@ ul.task-list li input[type="checkbox"] {
 <meta property="og:site_name" content="Quarto Pressmark">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -120,8 +155,7 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-    </div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -155,8 +189,44 @@ ul.task-list li input[type="checkbox"] {
 <figcaption>Mondrian: Tableau I</figcaption>
 </figure>
 </div>
+<p>Listings are a powerful and flexible way to generate collections of content automatically from your Markdown files. As the name suggests, a <em>listing</em> pulls together multiple documents and renders them as a structured list—useful for feature grids, blog indexes, documentation overviews, and more.</p>
+<p>For example, the feature cards on the main page of this theme are not written manually. Instead, they are generated from all Markdown documents inside the <code>features/</code> directory. This keeps your content modular and maintainable: you simply add or edit files in that folder, and the listing updates itself automatically.</p>
+<section id="defining-a-listing" class="level3">
+<h3 class="anchored" data-anchor-id="defining-a-listing">Defining a Listing</h3>
+<p>Listings are configured in your document’s YAML frontmatter. Here’s a basic example:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">listing</span><span class="kw">:</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="kw">-</span><span class="at"> </span><span class="fu">id</span><span class="kw">:</span><span class="at"> listing-features</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">contents</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> ./features/</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="st">"!/features/index.qmd"</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">type</span><span class="kw">:</span><span class="at"> grid</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">sort</span><span class="kw">:</span><span class="at"> </span><span class="st">"date desc"</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">fields</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">image</span><span class="kw">,</span><span class="at"> title</span><span class="kw">,</span><span class="at"> description</span><span class="kw">]</span><span class="at"> </span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Each option controls a different aspect of how the listing behaves and appears:</p>
+<ul>
+<li><code>id</code>: A unique identifier for the listing. You’ll use this to place it in your document.</li>
+<li><code>contents</code>: Specifies which files to include. You can point to directories, individual files, or exclude files using the <code>!</code> prefix.</li>
+<li><code>type</code>: Determines the layout (e.g., <code>grid</code>, <code>list</code>, etc.).</li>
+<li><code>sort</code>: Controls ordering, such as sorting by date in descending order.</li>
+<li><code>fields</code>: Defines which metadata from each document should be displayed (e.g., author, date, title, etc).</li>
+</ul>
+<p>Listings can be rendered in different layouts depending on your needs. You can see an example of a *gridÜ layout on the <a href="https://mdwm.org/quarto-pressmark/#features">main page</a>, where features are displayed as cards with images and descriptions. In contrast, the <a href="https://mdwm.org/quarto-pressmark/features/">features page</a> itself uses a list-style layout, presenting the same content in a more compact, linear format.</p>
+</section>
+<section id="placing-a-listing-in-your-page" class="level3">
+<h3 class="anchored" data-anchor-id="placing-a-listing-in-your-page">Placing a Listing in Your Page</h3>
+<p>Once defined, you can render the listing anywhere in your document by referencing its <code>id</code>. For example:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>::: {#listing-features}</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- The listing will be injected here --&gt;</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>:::</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>At build time, this placeholder is replaced with the generated listing based on your configuration.</p>
+</section>
+<section id="going-further" class="level3">
+<h3 class="anchored" data-anchor-id="going-further">Going Further</h3>
+<p>Listings in Quarto support a wide range of customization options, including filtering, categorization, pagination, and custom templates. You can also combine listings with frontmatter metadata (like tags or categories) to create more dynamic and interactive content structures.</p>
+<p>For a deeper dive into all available options—such as advanced filtering, custom layouts, and display controls—refer to the <a href="https://quarto.org/docs/websites/website-listings.html">official documentation</a></p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

@@ -4,42 +4,7 @@
     "href": "index.html",
     "title": "Quarto Pressmark",
     "section": "",
-    "text": "Pressmark - an elegant, typographic theme for Quarto websites. Inspired by newspapers like The Atlantic and the Financial Times as well as Edward Tufte’s design principles. Made for sites centered around text, that do not want to compromise on good design. Feauturing carefully selected fonts, well thought-trough default styling, and a bunch of quirks.\nGitHub Showcase\n\nQuickstart\nLearn more in the Setup Guide\n\n\nFeatures\n\n\n\n\n\n\n\n\nBanners and Table of Contents\n\n\nA more prominent way to present author, title and date in the title block\n\n\n\n\n\n\n\n\n\n\nCustomization\n\n\nMaking Pressmark work for you (e.g with a Dark Mode)\n\n\n\n\n\n\n\n\n\n\nListings\n\n\nIntroduction to a very useful quarto feature\n\n\n\n\n\n\n\n\n\n\nTypography\n\n\nMore about typographic quirks like Smallcaps and Drop Caps\n\n\n\n\n\n\n\n\n\n\nMarkup Reference\n\n\nA showcase of what things look like with Pressmark\n\n\n\n\n\n\n\n\n\n\nCitations\n\n\nSome tips for academics using Quarto\n\n\n\n\n\nNo matching items\n\n\nPressmark noun: A notation or figure in the margin of a printed sheet indicating the press on which it was printed.\nThe American Heritage® Dictionary of the English Language, 5th Edition."
-  },
-  {
-    "objectID": "features/index.html",
-    "href": "features/index.html",
-    "title": "Features",
-    "section": "",
-    "text": "Banners and Table of Contents\n\n\nA more prominent way to present author, title and date in the title block\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCustomization\n\n\nMaking Pressmark work for you (e.g with a Dark Mode)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nListings\n\n\nIntroduction to a very useful quarto feature\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTypography\n\n\nMore about typographic quirks like Smallcaps and Drop Caps\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMarkup Reference\n\n\nA showcase of what things look like with Pressmark\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCitations\n\n\nSome tips for academics using Quarto\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "features/typography/index.html",
-    "href": "features/typography/index.html",
-    "title": "Typography",
-    "section": "",
-    "text": "Type Specimen for Universal type\n\n\n\n\nFonts\n\nPlayfair Display\nJosefin Sans"
-  },
-  {
-    "objectID": "features/customization/index.html",
-    "href": "features/customization/index.html",
-    "title": "Customization",
-    "section": "",
-    "text": "Swiss Design Color Picker"
-  },
-  {
-    "objectID": "features/banners/index.html",
-    "href": "features/banners/index.html",
-    "title": "Banners and Table of Contents",
-    "section": "",
-    "text": "Table from Graphis diagrams: The Graphic Visualization of Abstract Data"
-  },
-  {
-    "objectID": "features/listings/index.html",
-    "href": "features/listings/index.html",
-    "title": "Listings",
-    "section": "",
-    "text": "Mondrian: Tableau I"
+    "text": "Pressmark - an elegant, typographic theme for Quarto websites. Inspired by newspapers like The Atlantic and the Financial Times as well as Edward Tufte’s design principles. Made for sites centered around text, that do not want to compromise on good design. Feauturing carefully selected fonts, well thought-trough default styling, and a bunch of quirks.\nGitHub Showcase\n\nQuickstart\nLearn more in the Setup Guide\n\n\nFeatures\n\n\n\n\n\n\n\n\nCustomization\n\n\nMaking Pressmark work for you (e.g with a Dark Mode)\n\n\n\n\n\n\n\n\n\n\nScientific Advice\n\n\nSome tips for academics using Quarto\n\n\n\n\n\n\n\n\n\n\nListings\n\n\nIntroduction to a very useful quarto feature\n\n\n\n\n\n\n\n\n\n\nTypography\n\n\nMore about typographic quirks like Smallcaps and Drop Caps\n\n\n\n\n\n\n\n\n\n\nMarkup Reference\n\n\nA showcase of what things look like with Pressmark\n\n\n\n\n\n\n\n\n\n\nBanners and Table of Contents\n\n\nA more prominent way to present author, title and date in the title block\n\n\n\nJan 1, 2000\n\n\n\n\n\n\nNo matching items\n\n\nPressmark noun: A notation or figure in the margin of a printed sheet indicating the press on which it was printed.\nThe American Heritage® Dictionary of the English Language, 5th Edition."
   },
   {
     "objectID": "features/markdown/index.html",
@@ -56,10 +21,73 @@
     "text": "Footnotes\n\n\nMy reference.↩︎\nEvery new line should be prefixed with 2 spaces.\nThis allows you to have a footnote with multiple lines.↩︎\nNamed footnotes will still render with numbers instead of the text but allow easier identification and linking.\nThis footnote also has been made with a different syntax using 4 spaces for new lines.↩︎"
   },
   {
-    "objectID": "features/citations/index.html",
-    "href": "features/citations/index.html",
-    "title": "Citations",
+    "objectID": "features/listings/index.html",
+    "href": "features/listings/index.html",
+    "title": "Listings",
+    "section": "",
+    "text": "Mondrian: Tableau I\n\n\nListings are a powerful and flexible way to generate collections of content automatically from your Markdown files. As the name suggests, a listing pulls together multiple documents and renders them as a structured list—useful for feature grids, blog indexes, documentation overviews, and more.\nFor example, the feature cards on the main page of this theme are not written manually. Instead, they are generated from all Markdown documents inside the features/ directory. This keeps your content modular and maintainable: you simply add or edit files in that folder, and the listing updates itself automatically.\n\nDefining a Listing\nListings are configured in your document’s YAML frontmatter. Here’s a basic example:\nlisting:\n  - id: listing-features\n    contents: \n      - ./features/\n      - \"!/features/index.qmd\"\n    type: grid\n    sort: \"date desc\"\n    fields: [image, title, description] \nEach option controls a different aspect of how the listing behaves and appears:\n\nid: A unique identifier for the listing. You’ll use this to place it in your document.\ncontents: Specifies which files to include. You can point to directories, individual files, or exclude files using the ! prefix.\ntype: Determines the layout (e.g., grid, list, etc.).\nsort: Controls ordering, such as sorting by date in descending order.\nfields: Defines which metadata from each document should be displayed (e.g., author, date, title, etc).\n\nListings can be rendered in different layouts depending on your needs. You can see an example of a *gridÜ layout on the main page, where features are displayed as cards with images and descriptions. In contrast, the features page itself uses a list-style layout, presenting the same content in a more compact, linear format.\n\n\nPlacing a Listing in Your Page\nOnce defined, you can render the listing anywhere in your document by referencing its id. For example:\n::: {#listing-features}\n&lt;!-- The listing will be injected here --&gt;\n:::\nAt build time, this placeholder is replaced with the generated listing based on your configuration.\n\n\nGoing Further\nListings in Quarto support a wide range of customization options, including filtering, categorization, pagination, and custom templates. You can also combine listings with frontmatter metadata (like tags or categories) to create more dynamic and interactive content structures.\nFor a deeper dive into all available options—such as advanced filtering, custom layouts, and display controls—refer to the official documentation"
+  },
+  {
+    "objectID": "features/customization/index.html",
+    "href": "features/customization/index.html",
+    "title": "Customization",
+    "section": "",
+    "text": "Swiss Design Color Picker\nMaybe you’d like to tweak the theme’s default colors or switch to a different font. Since everything is defined in a single SCSS file, making these changes is straightforward.\nIf you want to go beyond basic customization, take a look at the Quarto documentation or this excellent blog post by Silvia Canelón."
+  },
+  {
+    "objectID": "features/customization/index.html#changing-background-colors",
+    "href": "features/customization/index.html#changing-background-colors",
+    "title": "Customization",
+    "section": "Changing background colors",
+    "text": "Changing background colors\nOpen the SCSS file and you’ll find the following variables:\n$primary-color: #faf9f6;  // page background\n$primary-color-shade: #f0eee7; // code blocks, etc.\n$highlight-color: #990f3d; // accent color\n$highlight-color-shade: #d0b6b6; // button hover color\n$dark : #000000;  // mostly used for borders\n$font-color: #1b1b1b; // text color\n\n// DARK MODE COLORS\n// $primary-color: rgb(20, 20, 20);  // page background\n// $primary-color-shade: rgb(30, 30, 30); // code blocks, etc.\n// $highlight-color: rgb(210, 156, 174); // accent color\n// $highlight-color-shade: rgb(211, 60, 111); // button hover color\n// $dark : rgb(156, 156, 156);  // mostly used for borders\n// $font-color: rgb(218, 218, 218); // text color\nTo enable dark mode, simply comment out the first six lines and uncomment the dark mode values below. The defaults are designed to work well out of the box.\nIf you have a specific color palette in mind, feel free to adjust these variables to match your style."
+  },
+  {
+    "objectID": "features/customization/index.html#changing-the-font",
+    "href": "features/customization/index.html#changing-the-font",
+    "title": "Customization",
+    "section": "Changing the font",
+    "text": "Changing the font\nTo change the font, the easiest approach is to pick one from Google Fonts. For example, a clean sans-serif option for body text is Josefin Sans.\nImport the font in pressmark.scss and update the Bootstrap body font variable:\n@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap'); // sans-serif\n...\n$font-family-text: 'Josefin Sans', 'Georgia', 'Times New Roman', serif;\nYour site should now use the new font.\nNote: It’s recommended to keep the default fonts for headings and small caps. They’re carefully chosen to match the theme, and the CSS sizing is optimized for them."
+  },
+  {
+    "objectID": "features/banners/index.html",
+    "href": "features/banners/index.html",
+    "title": "Banners and Table of Contents",
+    "section": "",
+    "text": "Banner\n  Table of Contents"
+  },
+  {
+    "objectID": "features/banners/index.html#banner",
+    "href": "features/banners/index.html#banner",
+    "title": "Banners and Table of Contents",
+    "section": "Banner",
+    "text": "Banner\nIf you want a more prominent, visually distinct title area—like the banner shown above—you can enable a title block banner on a per-document basis:\ntitle-block-banner: true\nThis adds a full-width header section that helps your page stand out and creates a clearer visual hierarchy for your title and metadata. For more details and customization options, see the Quarto documentation"
+  },
+  {
+    "objectID": "features/banners/index.html#table-of-contents",
+    "href": "features/banners/index.html#table-of-contents",
+    "title": "Banners and Table of Contents",
+    "section": "Table of Contents",
+    "text": "Table of Contents\nThis page demonstrates two types of tables of contents (TOC): a floating TOC on the right that follows your scroll position, and a fixed TOC at the top of the page.\nYou can control TOC behavior with several options (see the full reference):\ntoc: true\ntoc-depth: 2\ntoc-location: right-body  # alternatives: \"right\", \"left\", \"body\"\n\ntoc: Enables the table of contents.\ntoc-depth: Controls how many heading levels are included.\ntoc-location: Controls placement:\n\nright or left creates a floating sidebar TOC.\nbody places the TOC directly in the document.\nright-body combines both approaches.\n\n\nNote: Floating TOCs are not displayed on mobile devices. If it’s important that readers always have an overview of the page structure, consider including a body TOC as well."
+  },
+  {
+    "objectID": "features/academics/index.html",
+    "href": "features/academics/index.html",
+    "title": "Scientific Advice",
     "section": "",
     "text": "New York Public Library Floor Plan"
+  },
+  {
+    "objectID": "features/typography/index.html",
+    "href": "features/typography/index.html",
+    "title": "Typography",
+    "section": "",
+    "text": "Type Specimen for Universal type\n\n\nDrop caps are enlarged initial letters that appear at the beginning of a word, paragraph, or chapter. They extend several lines deep into the text and sit within the margins, causing the surrounding lines to wrap around them. This typographic style is commonly used in books and newspapers to add visual interest to a block of text. Wikipedia\nSmall caps are characters designed in the form of uppercase letters but set at a smaller size, typically matching the height of lowercase letters or text figures. They are often used to emphasize the opening words of a section or to create a subtle visual distinction within the text. Wikipedia\n\nPressmark provides markdown-native ways to create these typographic effects by repurposing rarely used styling conventions.\nTo apply small caps, wrap the text in ***. For example, writing ***Small caps*** will render as Small caps in your document.\nTo create drop caps, use the same syntax but mark the first letter as inline code. For example:\n***`D`rop caps*** are letters at the beginning of a word,\na chapter, or a paragraph that are larger than the rest of the text.\nSmall caps are often used immediately after a drop cap, as they provide a smoother visual transition from the enlarged initial letter into the rest of the paragraph (as shown above).\n\nIf you’re curious about the typography: Pressmark uses the beautiful Playfair Display type for headings, paired with Newsreader for text."
+  },
+  {
+    "objectID": "features/index.html",
+    "href": "features/index.html",
+    "title": "Features",
+    "section": "",
+    "text": "Customization\n\n\nMaking Pressmark work for you (e.g with a Dark Mode)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nScientific Advice\n\n\nSome tips for academics using Quarto\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nListings\n\n\nIntroduction to a very useful quarto feature\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTypography\n\n\nMore about typographic quirks like Smallcaps and Drop Caps\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMarkup Reference\n\n\nA showcase of what things look like with Pressmark\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBanners and Table of Contents\n\n\nA more prominent way to present author, title and date in the title block\n\n\n\n\n\n\n\n\nNo matching items"
   }
 ]

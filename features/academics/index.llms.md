@@ -1,4 +1,4 @@
-# Citations
+# Scientific Advice
 
 Some tips for academics using Quarto
 

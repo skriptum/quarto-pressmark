@@ -8,13 +8,13 @@ Learn more in the [Setup Guide](setup.llms.md)
 
 ### Features
 
-##### Banners and Table of Contents
-
-A more prominent way to present author, title and date in the title block
-
 ##### Customization
 
 Making Pressmark work for you (e.g with a Dark Mode)
+
+##### Scientific Advice
+
+Some tips for academics using Quarto
 
 ##### Listings
 
@@ -28,9 +28,11 @@ More about typographic quirks like Smallcaps and Drop Caps
 
 A showcase of what things look like with Pressmark
 
-##### Citations
+##### Banners and Table of Contents
 
-Some tips for academics using Quarto
+A more prominent way to present author, title and date in the title block
+
+Jan 1, 2000
 
 > **Pressmark** *noun*: A notation or figure in the margin of a printed sheet indicating the press on which it was printed.
 >
