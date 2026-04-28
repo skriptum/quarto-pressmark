@@ -1,17 +1,42 @@
 /*-- scss:defaults --*/
 
-// Quarto Refs
-// Bootstrap Variables: https://github.com/quarto-dev/quarto-cli/blob/main/src/resources/formats/html/bootstrap/_bootstrap-variables.scss
-// Bootstrap Rules: https://github.com/quarto-dev/quarto-cli/blob/main/src/resources/formats/html/bootstrap/_bootstrap-rules.scss
-// How to Handle: https://silviacanelon.com/blog/2023-09-29-hello-quarto/#scss-variables
+// PRESSMARK - an elegant, unobstrusive, typographic theme for Quarto websites.
+
+/*
+############################################################################
+META
+############################################################################
+
+GITHUB: https://github.com/skriptum/quarto-pressmark
+DOCS: https://mdwm.org/quarto-pressmark/
+CREATOR: Marten (https://martenw.com)
+
+REFERENCE LINKS FOR FUTURE: How to handle Quarto SCSS Bootstrap
+Bootstrap Variables: https://github.com/quarto-dev/quarto-cli/blob/main/src/resources/formats/html/bootstrap/_bootstrap-variables.scss
+Bootstrap Rules: https://github.com/quarto-dev/quarto-cli/blob/main/src/resources/formats/html/bootstrap/_bootstrap-rules.scss
+How to Handle: https://silviacanelon.com/blog/2023-09-29-hello-quarto/#scss-variables
+
+TABLE OF CONTENTS
+1. Customization
+2. Bootstrap Definitions
+3. Styling for Quarto Specific elements
+4 Markdown / HTML Elements
+5. Custom Classes
+*/
+
+// ############################################################################
+// 1. CUSTOMIZATION
+// ############################################################################
+
+// Font Imports
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap'); //serif
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400..900;1,400..900&display=swap'); // Smallcaps
-
-// @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap'); //sans-serif
 @import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap'); // Alternative serif
+// @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap'); //sans-serif
 
-
+// ----------------------------------------------------------------------------
+// LIGHT MODE COLORS
 $primary-color: #faf9f6;  // page background
 $primary-color-shade: #f0eee7; // code blocks etc
 $highlight-color: #990f3d; // color highlights
@@ -19,18 +44,25 @@ $highlight-color-shade: #d0b6b6; // hover color for buttons
 $dark : #000000;  // mostly used for borders
 $font-color: #1b1b1b; // self explanatory 
 
-  // $primary-color: rgb(20, 20, 20);  // page background
-  // $primary-color-shade: rgb(30, 30, 30); // code blocks etc
-  // $highlight-color: rgb(222, 28, 93); // color highlights
-  // $highlight-color-shade: rgb(153, 15, 61); // hover color for buttons
-  // $dark : rgb(156, 156, 156);  // mostly used for borders
-  // $font-color: rgb(218, 218, 218); // self explanatory
+// DARK MODE COLORS
+// $primary-color: rgb(20, 20, 20);  // page background
+// $primary-color-shade: rgb(30, 30, 30); // code blocks etc
+// $highlight-color: rgb(210, 156, 174); // color highlights
+// $highlight-color-shade: rgb(211, 60, 111); // hover color for buttons
+// $dark : rgb(156, 156, 156);  // mostly used for borders
+// $font-color: rgb(218, 218, 218); // self explanatory
 
+
+// ############################################################################
+// 2. BOOTSTRAP DEFINITIONS
+// ############################################################################
 
 // Font Families
 $font-family-headings: 'Playfair Display', 'Bodoni', 'Times New Roman', serif;
 $font-family-text: 'Newsreader', 'Georgia', 'Times New Roman', serif;
-$font-family-smallcaps: 'Playfair Display SC', 'Times New Roman', serif;
+$font-family-smallcaps: 'Playfair Display SC', 'Playfair Display', 'Bodoni', 'Times New Roman', serif;
+$font-family-monospace:  "Liberation Mono", "Courier New", monospace ;
+$font-family-base: $font-family-text;
 $font-size-base: 19px;
 $font-size-small: 0.85em;
 $bold-weight: 700;
@@ -65,8 +97,21 @@ $grid-sidebar-width: 400px !default;
 $grid-body-width: 650px !default;
 // $grid-margin-width: 300px !default;
 
-/*-- scss:rules --*/
 
+/*-- scss:rules --*/
+// ############################################################################
+// 3. STYLING FOR QUARTO SPECIFIC ELEMENTS
+// ############################################################################
+
+
+body {
+  font-family: $font-family-text;
+  font-weight: 350;
+  line-height: 1.35;
+}
+
+
+// ----------------------------------------------------------------------------
 // Navbar and Footer
 .navbar {
   font-family: $font-family-text;
@@ -94,12 +139,6 @@ $grid-body-width: 650px !default;
     // margin-left: auto;
     order: 4;
   }
-  // #quarto-search {
-  //   @media (max-width: 767.98px) {
-  //     // margin-left: 0px !important;
-  //     order: 3;
-  //   }
-  // }
   // FOR positioning logo in the middle (no title then!)
   // .navbar-brand-container {
   //   position in middle always
@@ -117,10 +156,11 @@ $grid-body-width: 650px !default;
 .footer {
   // border-top: 1px solid $dark;
   font-family: $font-family-headings;
+  font-size: $font-size-small;
 }
 
+// ----------------------------------------------------------------------------
 // Title Block 
-
 .quarto-title-block {
   padding-bottom: 2em;
   padding-top: 5vh;
@@ -146,8 +186,17 @@ h1.title {
   margin-bottom: 0.5em !important;
 }
 
-// make the banner darker 
+.quarto-category {
+  border-color: 1px solid $dark !important;
+  padding: 0.2em 1em 0.05em 1em;
+  border-radius: 1rem !important;
+  background-size: 21px 21px;
+  min-width: 60px;
+  text-align: center;
+  opacity: 1 !important;
+}
 
+// Banner 
 .quarto-title-banner.page-full {
   background-color: $dark;
   color: invert($font-color);
@@ -171,19 +220,10 @@ h1.title {
   }
 }
 
-.quarto-category {
-  border-color: 1px solid $dark !important;
-  padding: 0.2em 1em 0.05em 1em;
-  border-radius: 1rem !important;
-  background-size: 21px 21px;
-  min-width: 60px;
-  text-align: center;
-  opacity: 1 !important;
-}
+// ----------------------------------------------------------------------------
+// Table of Contents
 
-// TOC in body
-
-nav#TOC {
+nav[id*="TOC"] {
   background-color: $primary-color-shade;
   padding: 0.5em 1em;
   margin-bottom: 1em;
@@ -201,10 +241,21 @@ nav#TOC {
     }
 }
 
-nav.toc-active#TOC {
+nav.toc-active {
   background-color: $primary-color;
 }
 
+// if TOC location = body-right, you have to catch it
+nav#TOC-body {
+  li::marker {
+    content: "→ ";
+  }
+  li a {
+    font-size: $font-size-small;
+  }
+}
+
+// and if the body toc is the only one
 nav:not(.toc-active)#TOC {
   li::marker {
     content: "→ ";
@@ -220,7 +271,8 @@ nav:not(.toc-active)#TOC {
   }
 }
 
-// Listing
+// ----------------------------------------------------------------------------
+// Listings
 
 .quarto-post {
   border-bottom: 1px solid $dark !important;
@@ -266,14 +318,19 @@ nav:not(.toc-active)#TOC {
   margin-right: 0px !important;
 }
 
-// General
+// ----------------------------------------------------------------------------
+// Smaller Quarto elements
 
-body {
-  font-family: $font-family-text;
-  font-weight: 350;
-  line-height: 1.35;
+// The line above footnotes etc styled the same as HR
+#quarto-appendix.default {
+  border-top: 1px solid $dark;
 }
 
+// ############################################################################
+// 4. MARKDOWN ELEMENTS
+// ############################################################################
+
+// Headings
 h1,h2,h3,h4,h5,h6 {
   font-family: $font-family-headings;
   font-weight: 500;
@@ -283,13 +340,17 @@ h1,h2,h3,h4,h5,h6 {
   padding-bottom: 0em;
 }
 
-//Smallcaps for em tags in strong tags
+// Small caps Hack: Overriding *** *** 
 strong em {
   font-family: $font-family-smallcaps;
   font-weight: 500 !important;
   font-style: normal;
   font-size: $font-size-small;
 }
+
+
+// ----------------------------------------------------------------------------
+// Fancy Typography
 
 // Drop Cap for first letter of Smallcaps
 strong em code {
@@ -305,6 +366,7 @@ strong em code {
   font-family: $font-family-headings;
 }
 
+// Fancy ornamental Divider
 hr {
   // margin: 2em 20vw 2em 20vw;
   // border-top: 1px solid $dark;
@@ -333,10 +395,8 @@ hr {
   }
 }
 
-em hr {
-  border: 1px solid $dark;
-  width: 100%;
-}
+// ----------------------------------------------------------------------------
+// Buttons, Tables, Quotes etc
 
 button:not([class])  {
   border: 1px solid $highlight-color;
@@ -358,24 +418,15 @@ a {
   font-weight: 300;
 }
 
-// Code Blocks
-pre {
-  background-color: $code-block-bg;
-  padding: 1em;
-  border-radius: 5px;
-  font-family: 'Courier New', Courier, monospace;
-}
-
-
-.code-with-filename-file { // Quarto code blocks with filename
-  background-color: darken($code-block-bg, 5%) !important; 
-  border: 0px !important;
-  pre {
-    border-radius: 0px;
-    padding: 0px;
-    background-color: darken($code-block-bg, 5%);
+// If external link icon is activated, this improves the icon
+a.external::after {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path d='M6 4h6v6M12 4L4 12' fill='none' stroke='%23990f3d' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+  background-repeat: no-repeat;
+  background-size: 0.5em;
+  background-position: right 0.2em top 0.1em;
+  padding-right: 1em;
+  margin-left: -0.1em;
   }
-}
 
 .table {
   .odd {
@@ -390,7 +441,7 @@ pre {
   border-left: 5px solid $highlight-color;
   padding-left: 1rem;
   font-family: $font-family-headings;
-  font-size: $font-size-base;
+  font-size: $font-size-small;
   border-radius: .25rem;
   background-color: $primary-color-shade;
   text-align: center;
@@ -402,12 +453,31 @@ pre {
   }
 }
 
-// The line above footnotes etc styled the same as HR
-#quarto-appendix.default {
-  border-top: 1px solid $dark;
+// ----------------------------------------------------------------------------
+// Code Blocks
+pre {
+  background-color: $code-block-bg;
+  padding: 1em;
+  border-radius: 5px;
+  font-size: $font-size-small;
 }
 
-// Custom Classes
+// Quarto code blocks with filename
+.code-with-filename-file {
+  background-color: darken($code-block-bg, 5%) !important; 
+  border: 0px !important;
+  pre {
+    border-radius: 0px;
+    padding: 0px;
+    background-color: darken($code-block-bg, 5%);
+  }
+}
+
+
+
+// ############################################################################
+// 5. CUSTOM CLASSES 
+// ############################################################################
 
 .content-block {
   border-bottom: 1px solid $dark;
