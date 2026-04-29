@@ -62,8 +62,11 @@ $font-family-headings: 'Playfair Display', 'Bodoni', 'Times New Roman', serif;
 $font-family-text: 'Newsreader', 'Georgia', 'Times New Roman', serif;
 $font-family-smallcaps: 'Playfair Display SC', 'Playfair Display', 'Bodoni', 'Times New Roman', serif;
 $font-family-monospace:  "Liberation Mono", "Courier New", monospace ;
+
 $font-family-base: $font-family-text;
 $font-size-base: 19px;
+$font-weight-base: 300;
+$line-height-base: 1.35;
 $font-size-small: 0.85em;
 $bold-weight: 700;
 
@@ -102,13 +105,6 @@ $grid-body-width: 650px !default;
 // ############################################################################
 // 3. STYLING FOR QUARTO SPECIFIC ELEMENTS
 // ############################################################################
-
-
-body {
-  font-family: $font-family-text;
-  font-weight: 350;
-  line-height: 1.35;
-}
 
 
 // ----------------------------------------------------------------------------
@@ -186,14 +182,27 @@ h1.title {
   margin-bottom: 0.5em !important;
 }
 
+// Category tags for posts
 .quarto-category {
-  border-color: 1px solid $dark !important;
-  padding: 0.2em 1em 0.05em 1em;
-  border-radius: 1rem !important;
-  background-size: 21px 21px;
-  min-width: 60px;
-  text-align: center;
+  border: 0px !important;
+  color: $highlight-color;
   opacity: 1 !important;
+  padding: 0em !important;
+}
+
+.quarto-category::after {
+  content: ", ";
+}
+
+.quarto-category:last-child::after {
+  content: "";
+}
+
+.quarto-categories::before {
+  content: "TAGS: ";
+  text-transform: small-caps;
+  font-size: 0.65em;
+  color: $highlight-color;
 }
 
 // Banner 
@@ -473,6 +482,40 @@ pre {
   }
 }
 
+// ----------------------------------------------------------------------------
+// Details and Summary
+details {
+  border-bottom: 1px solid black;
+}
+
+summary {
+  cursor: pointer;
+  font-family: $font-family-headings;
+  font-size: 1.4rem;
+  color: $font-color !important;
+  padding: 0.75rem 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+summary::-webkit-details-marker { display: none; }
+
+summary::before {
+  content: '';
+  display: inline-block;
+  width: 0.45em;
+  height: 0.45em;
+  border-top: 1.5px solid currentColor;
+  border-right: 1.5px solid currentColor;
+  transform: rotate(45deg);
+  transition: transform 0.2s;
+  margin-right: 0.5em;
+  flex-shrink: 0;
+}
+details[open] > summary::before {
+  transform: rotate(135deg);
+}
 
 
 // ############################################################################
