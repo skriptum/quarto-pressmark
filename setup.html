@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="A step-by-step guide to setting up a new website with the Pressmark theme, adding it to an existing site, and deploying it to the web.">
 
-<title>setup – Quarto Pressmark</title>
+<title>Setup Guide – Quarto Pressmark</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -22,6 +23,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -43,7 +79,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-bdf67b448a403dde36248dfdc89c95ef.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-a2cd1274fb6c57e4d4a26f9e855a24ed.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-72ff1dc0b0be5372aa01f258969b4530.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -73,7 +109,9 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<meta property="og:title" content="Quarto Pressmark">
+<meta property="og:title" content="Setup Guide – Quarto Pressmark">
+<meta property="og:description" content="A step-by-step guide to setting up a new website with the Pressmark theme, adding it to an existing site, and deploying it to the web.">
+<meta property="og:image" content="https://mdwm.org/quarto-pressmark/static/setup.jpeg">
 <meta property="og:site_name" content="Quarto Pressmark">
 </head>
 
@@ -120,13 +158,118 @@ ul.task-list li input[type="checkbox"] {
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Setup Guide</h1>
+</div>
+
+<div>
+  <div class="description">
+    A step-by-step guide to setting up a new website with the Pressmark theme, adding it to an existing site, and deploying it to the web.
+  </div>
+</div>
 
 
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
 
 
+</header>
+
+<nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#starting-a-new-site-with-pressmark" id="toc-starting-a-new-site-with-pressmark">Starting a new site with Pressmark</a>
+  <ul>
+  <li><a href="#using-the-github-template" id="toc-using-the-github-template">Using the GitHub Template</a></li>
+  <li><a href="#downloading-the-full-code" id="toc-downloading-the-full-code">Downloading the full code</a></li>
+  <li><a href="#basic-quarto-website-commands" id="toc-basic-quarto-website-commands">Basic Quarto website commands</a></li>
+  </ul></li>
+  <li><a href="#adding-pressmark-to-an-existing-website" id="toc-adding-pressmark-to-an-existing-website">Adding Pressmark to an existing website</a></li>
+  <li><a href="#deploying-your-site-to-the-web" id="toc-deploying-your-site-to-the-web">Deploying your site to the web</a>
+  <ul>
+  <li><a href="#github-pages" id="toc-github-pages">GitHub Pages</a></li>
+  <li><a href="#uploading-the-html" id="toc-uploading-the-html">Uploading the HTML</a></li>
+  </ul></li>
+  </ul>
+</nav>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./static/setup.jpeg" class="img-fluid figure-img"></p>
+<figcaption>Composition Mechanical Movement cart (1919) - Ferdinand Leger</figcaption>
+</figure>
+</div>
+<section id="starting-a-new-site-with-pressmark" class="level2">
+<h2 class="anchored" data-anchor-id="starting-a-new-site-with-pressmark">Starting a new site with Pressmark</h2>
+<p>So, you want your own website, Great! You don’t need to be a web developer to do that, and you don’t need to know how to code. With Quarto (and Pressmark), it’s quite easy to get a simple website up and running.</p>
+<section id="using-the-github-template" class="level3">
+<h3 class="anchored" data-anchor-id="using-the-github-template">Using the GitHub Template</h3>
+<p>If you already have a GitHub account, this is probably the easiest way. Just go to the <a href="https://github.com/skriptum/quarto-pressmark">Pressmark GitHub Repo</a> and click the “Use this template” button. This will create a new repository in your GitHub account with the Pressmark theme already set up. You can then clone this repository to your local machine, make changes, and push them back to GitHub.</p>
+</section>
+<section id="downloading-the-full-code" class="level3">
+<h3 class="anchored" data-anchor-id="downloading-the-full-code">Downloading the full code</h3>
+<p>If you don’t have a GitHub account, or if you prefer to work locally, you can download the full code as a ZIP file. Go to the <a href="https://github.com/skriptum/quarto-pressmark">Pressmark GitHub Repo</a> and click the green “Code” button, then select “Download ZIP”.</p>
+<p>Extract the contents to a folder of your choice, and you’re ready to go. Make sure you have <a href="https://quarto.org/">Quarto</a> installed, and navigate to the folder in your terminal.</p>
+</section>
+<section id="basic-quarto-website-commands" class="level3">
+<h3 class="anchored" data-anchor-id="basic-quarto-website-commands">Basic Quarto website commands</h3>
+<p>To render your website, run the following command:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>This will generate the HTML files for your website in the <code>_site</code> folder. To preview your website locally, run:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> preview</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>It will open your website in your default browser. Now, you can adjust the content in the editor of your choice, and see it change in real time.</p>
+<hr>
+</section>
+</section>
+<section id="adding-pressmark-to-an-existing-website" class="level2">
+<h2 class="anchored" data-anchor-id="adding-pressmark-to-an-existing-website">Adding Pressmark to an existing website</h2>
+<p>If you already have a Quarto website and want to switch to the Pressmark theme, you can do so by following these steps:</p>
+<ol type="1">
+<li>Download the <code>pressmark.scss</code> from the <a href="https://github.com/skriptum/quarto-pressmark/blob/main/pressmark.scss">GitHub Repo</a> and add it to your website’s folder.</li>
+<li>Now, adjust your website’s <code>_quarto.yml</code> file to include the Pressmark theme. Add the following lines</li>
+</ol>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">format</span><span class="kw">:</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">theme</span><span class="kw">:</span><span class="at"> pressmark.scss</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<ol start="3" type="1">
+<li>Use the Pressmark features (e.g the Drop Caps from <a href="./features/typography.qmd">Typography</a>), or adjust the colors</li>
+</ol>
+<p>Render your website and you should be good to go!</p>
+<p>Alternatively, if you already have a custom scss file, you can also import <code>pressmark.scss</code> into your existing scss file, and adjust the theme settings there.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode css code-with-copy"><code class="sourceCode css"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">@import</span> <span class="st">"pressmark.scss"</span><span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>You’ll probably need to adjust some of your styles / layout to make it work with the Pressmark theme, but if you alread have a custom scss file, you probably know your way around CSS, so that shouldn’t be a problem.</p>
+<blockquote class="blockquote">
+<p>Irrespective of how you set up your website, it would be cool if you can attribute the theme by adding a link to the <a href="https://mdwm.org/quarto-pressmark/">Docs</a>, so that other people can find it and use it for their own projects. You can do this in the footer, or in the sidebar, or anywhere else you like.</p>
+</blockquote>
+<hr>
+</section>
+<section id="deploying-your-site-to-the-web" class="level2">
+<h2 class="anchored" data-anchor-id="deploying-your-site-to-the-web">Deploying your site to the web</h2>
+<p>There are hundreds of ways to deploy some HTML files to the web, I found GitHub Pages to be the easiest and most straightforward way.</p>
+<section id="github-pages" class="level3">
+<h3 class="anchored" data-anchor-id="github-pages">GitHub Pages</h3>
+<p>If you used the GitHub Template, you can simply go to the “Settings” of your repository, scroll down to the “GitHub Pages” section, and select the branch you want to deploy from. As the template already includes a gh-pages workflow, you just need to push your changes to the main branch, and GitHub will take care of the rest.</p>
+<p>For it to work, you need to select the <code>gh-pages</code> branch as the source for GitHub Pages. You don’t need to upload the <code>_site</code> folder to GitHub, so make sure it’s included in your <code>.gitignore</code> file.</p>
+<p>Your new website should be live within a few minutes at <code>https://yourusername.github.io/yourrepositoryname/</code>.</p>
+</section>
+<section id="uploading-the-html" class="level3">
+<h3 class="anchored" data-anchor-id="uploading-the-html">Uploading the HTML</h3>
+<p>If you don’t want to use GitHub Pages, you can also upload the generated HTML files in the <code>_site</code> folder to any web hosting service that supports static sites. Some popular options include Netlify, Vercel, and AWS S3.</p>
+<p>This may seem easier at first, but if you want to update your website, you’ll need to re-upload the HTML files every time, which can be a bit of a hassle. So I recommend using GitHub Pages if you can, as it allows for easy updates and version control.</p>
+<hr>
+<p>All of the above was just a very short introduction to get you started. For more detailed instructions, troubleshooting tips, and advanced features, check out the <a href="https://quarto.org/">Quarto Documentation</a>.</p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

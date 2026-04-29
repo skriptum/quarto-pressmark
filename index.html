@@ -23,6 +23,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -45,7 +80,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-bdf67b448a403dde36248dfdc89c95ef.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-14355c49ed194026ceed4f292014fb04.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-5f4c02fa75c7db1932e7c32cd37c7af7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -83,7 +118,7 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-image','listing-date','listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-image','listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
       searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
     };
@@ -199,31 +234,16 @@ window.Quarto = {
 
 
 
-<p><strong><em><code>P</code>ressmark</em></strong> - an elegant, typographic theme for Quarto websites. Inspired by newspapers like <a href="https://www.theatlantic.com/">The Atlantic</a> and the <a href="https://www.ft.com/">Financial Times</a> as well as <a href="https://edwardtufte.github.io/tufte-css/">Edward Tufte’s design principles</a>. Made for sites centered around text, that do not want to compromise on good design. Feauturing carefully selected fonts, well thought-trough default styling, and a bunch of quirks.</p>
-<p><a href="https://github.com/skriptum/quarto-pressmark"><button>GitHub</button></a> <a href="https://mdwm.org"><button>Showcase</button></a></p>
-<section id="quickstart" class="level3">
-<h3 class="anchored" data-anchor-id="quickstart">Quickstart</h3>
-<p>Learn more in the <a href="./setup.html">Setup Guide</a></p>
-</section>
-<section id="features" class="level3">
+<div class="content-block">
+<p><strong><em><code>P</code>ressmark</em></strong> - an elegant, unobstrusive, typographic theme for Quarto websites. Inspired by newspapers like <a href="https://www.theatlantic.com/">The Atlantic</a> and the <a href="https://www.ft.com/">Financial Times</a> and shaped by <a href="https://edwardtufte.github.io/tufte-css/">Edward Tufte’s design principles</a>. Made for sites centered around text that don’t want to compromise on good design. Feauturing carefully selected fonts, well-thought-out default styles, and a bunch of quirks.</p>
+<p><a href="https://github.com/skriptum/quarto-pressmark"><button>GitHub</button></a> <a href="https://martenw.com"><button>Showcase</button></a></p>
+<!-- ![](./static/logo-white.png) -->
+</div>
+<section id="features" class="level3 content-block">
 <h3 class="anchored" data-anchor-id="features">Features</h3>
 <div id="listing-listing-features" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1777393078945" data-listing-reading-time-sort="2" data-listing-word-count-sort="275">
-<a href="./features/customization/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img loading='lazy' src="features/customization/colorpicker.jpg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Customization
-</h5>
-<div class="card-text listing-description delink">
-<p>Making Pressmark work for you (e.g with a Dark Mode)</p>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1777393078940" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1777476916119" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
 <a href="./features/academics/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img loading='lazy' src="features/academics/library.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -237,35 +257,7 @@ Scientific Advice
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1777393078945" data-listing-reading-time-sort="2" data-listing-word-count-sort="383">
-<a href="./features/listings/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img loading='lazy' src="features/listings/mondrian.jpg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Listings
-</h5>
-<div class="card-text listing-description delink">
-<p>Introduction to a very useful quarto feature</p>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1777393078947" data-listing-reading-time-sort="2" data-listing-word-count-sort="234">
-<a href="./features/typography/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img loading='lazy' src="features/typography/specimen.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Typography
-</h5>
-<div class="card-text listing-description delink">
-<p>More about typographic quirks like Smallcaps and Drop Caps</p>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="4" data-listing-file-modified-sort="1777393078947" data-listing-reading-time-sort="4" data-listing-word-count-sort="602">
+<div class="g-col-1" data-index="1" data-categories="bWFya2Rvd24=" data-listing-file-modified-sort="1777476916126" data-listing-reading-time-sort="4" data-listing-word-count-sort="602">
 <a href="./features/markdown/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img loading='lazy' src="features/markdown/gebrauchsgraphik.jpg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -279,7 +271,49 @@ Markup Reference
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="5" data-listing-date-sort="946684800000" data-listing-file-modified-sort="1777393078944" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="190">
+<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1777476916126" data-listing-reading-time-sort="2" data-listing-word-count-sort="234">
+<a href="./features/typography/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img loading='lazy' src="features/typography/specimen.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Typography
+</h5>
+<div class="card-text listing-description delink">
+<p>More about typographic quirks like Smallcaps and Drop Caps</p>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1777476916125" data-listing-reading-time-sort="2" data-listing-word-count-sort="383">
+<a href="./features/listings/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img loading='lazy' src="features/listings/mondrian.jpg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Listings
+</h5>
+<div class="card-text listing-description delink">
+<p>Introduction to a very useful quarto feature</p>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="4" data-listing-file-modified-sort="1777476916125" data-listing-reading-time-sort="2" data-listing-word-count-sort="275">
+<a href="./features/customization/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img loading='lazy' src="features/customization/colorpicker.jpg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Customization
+</h5>
+<div class="card-text listing-description delink">
+<p>Making Pressmark work for you (e.g with a Dark Mode)</p>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="5" data-listing-date-sort="946684800000" data-listing-file-modified-sort="1777476916124" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="190">
 <a href="./features/banners/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img loading='lazy' src="features/banners/graphis.jpg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -290,17 +324,22 @@ Banners and Table of Contents
 <div class="card-text listing-description delink">
 <p>A more prominent way to present author, title and date in the title block</p>
 </div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Jan 1, 2000
-</div>
-</div>
 </div>
 </div></a>
 </div>
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
+</section>
+<section id="quickstart" class="level3 content-block">
+<h3 class="anchored" data-anchor-id="quickstart">Quickstart</h3>
+<p>There are multiple ways to get started with the Pressmark theme. To dig deep into all of them, see the <a href="./setup.html">Setup Guide</a>.</p>
+<p>If you’re in a hurry: Go to the <a href="https://github.com/skriptum/quarto-pressmark">Pressmark GitHub Repo</a>, click the green “Code” button, select “Download ZIP”, and extract the contents to a folder of your choice.</p>
+<p>Make sure you have <a href="https://quarto.org/">Quarto</a> installed, and navigate to the folder in your terminal. Then, run the following commands:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> preview</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>This should open your website in your browser. Now, adjust the content in the editor of your choice, and see it change in real time. For more detailed instructions, see the <a href="./setup.html">Setup Guide</a>.</p>
+</section>
 <blockquote class="blockquote">
 <p><strong>Pressmark</strong> <em>noun</em>: A notation or figure in the margin of a printed sheet indicating the press on which it was printed.</p>
 <p><strong><em>The American Heritage® Dictionary of the English Language, 5th Edition.</em></strong></p>
@@ -308,7 +347,6 @@ Jan 1, 2000
 
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

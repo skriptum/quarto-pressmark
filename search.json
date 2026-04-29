@@ -4,7 +4,77 @@
     "href": "index.html",
     "title": "Quarto Pressmark",
     "section": "",
-    "text": "Pressmark - an elegant, typographic theme for Quarto websites. Inspired by newspapers like The Atlantic and the Financial Times as well as Edward Tufte’s design principles. Made for sites centered around text, that do not want to compromise on good design. Feauturing carefully selected fonts, well thought-trough default styling, and a bunch of quirks.\nGitHub Showcase\n\nQuickstart\nLearn more in the Setup Guide\n\n\nFeatures\n\n\n\n\n\n\n\n\nCustomization\n\n\nMaking Pressmark work for you (e.g with a Dark Mode)\n\n\n\n\n\n\n\n\n\n\nScientific Advice\n\n\nSome tips for academics using Quarto\n\n\n\n\n\n\n\n\n\n\nListings\n\n\nIntroduction to a very useful quarto feature\n\n\n\n\n\n\n\n\n\n\nTypography\n\n\nMore about typographic quirks like Smallcaps and Drop Caps\n\n\n\n\n\n\n\n\n\n\nMarkup Reference\n\n\nA showcase of what things look like with Pressmark\n\n\n\n\n\n\n\n\n\n\nBanners and Table of Contents\n\n\nA more prominent way to present author, title and date in the title block\n\n\n\nJan 1, 2000\n\n\n\n\n\n\nNo matching items\n\n\nPressmark noun: A notation or figure in the margin of a printed sheet indicating the press on which it was printed.\nThe American Heritage® Dictionary of the English Language, 5th Edition."
+    "text": "Pressmark - an elegant, unobstrusive, typographic theme for Quarto websites. Inspired by newspapers like The Atlantic and the Financial Times and shaped by Edward Tufte’s design principles. Made for sites centered around text that don’t want to compromise on good design. Feauturing carefully selected fonts, well-thought-out default styles, and a bunch of quirks.\nGitHub Showcase\n\n\n\nFeatures\n\n\n\n\n\n\n\n\nScientific Advice\n\n\nSome tips for academics using Quarto\n\n\n\n\n\n\n\n\n\n\nMarkup Reference\n\n\nA showcase of what things look like with Pressmark\n\n\n\n\n\n\n\n\n\n\nTypography\n\n\nMore about typographic quirks like Smallcaps and Drop Caps\n\n\n\n\n\n\n\n\n\n\nListings\n\n\nIntroduction to a very useful quarto feature\n\n\n\n\n\n\n\n\n\n\nCustomization\n\n\nMaking Pressmark work for you (e.g with a Dark Mode)\n\n\n\n\n\n\n\n\n\n\nBanners and Table of Contents\n\n\nA more prominent way to present author, title and date in the title block\n\n\n\n\n\nNo matching items\n\n\n\nQuickstart\nThere are multiple ways to get started with the Pressmark theme. To dig deep into all of them, see the Setup Guide.\nIf you’re in a hurry: Go to the Pressmark GitHub Repo, click the green “Code” button, select “Download ZIP”, and extract the contents to a folder of your choice.\nMake sure you have Quarto installed, and navigate to the folder in your terminal. Then, run the following commands:\nquarto render\nquarto preview\nThis should open your website in your browser. Now, adjust the content in the editor of your choice, and see it change in real time. For more detailed instructions, see the Setup Guide.\n\n\nPressmark noun: A notation or figure in the margin of a printed sheet indicating the press on which it was printed.\nThe American Heritage® Dictionary of the English Language, 5th Edition."
+  },
+  {
+    "objectID": "setup.html",
+    "href": "setup.html",
+    "title": "Setup Guide",
+    "section": "",
+    "text": "Composition Mechanical Movement cart (1919) - Ferdinand Leger"
+  },
+  {
+    "objectID": "setup.html#starting-a-new-site-with-pressmark",
+    "href": "setup.html#starting-a-new-site-with-pressmark",
+    "title": "Setup Guide",
+    "section": "Starting a new site with Pressmark",
+    "text": "Starting a new site with Pressmark\nSo, you want your own website, Great! You don’t need to be a web developer to do that, and you don’t need to know how to code. With Quarto (and Pressmark), it’s quite easy to get a simple website up and running.\n\nUsing the GitHub Template\nIf you already have a GitHub account, this is probably the easiest way. Just go to the Pressmark GitHub Repo and click the “Use this template” button. This will create a new repository in your GitHub account with the Pressmark theme already set up. You can then clone this repository to your local machine, make changes, and push them back to GitHub.\n\n\nDownloading the full code\nIf you don’t have a GitHub account, or if you prefer to work locally, you can download the full code as a ZIP file. Go to the Pressmark GitHub Repo and click the green “Code” button, then select “Download ZIP”.\nExtract the contents to a folder of your choice, and you’re ready to go. Make sure you have Quarto installed, and navigate to the folder in your terminal.\n\n\nBasic Quarto website commands\nTo render your website, run the following command:\nquarto render\nThis will generate the HTML files for your website in the _site folder. To preview your website locally, run:\nquarto preview\nIt will open your website in your default browser. Now, you can adjust the content in the editor of your choice, and see it change in real time."
+  },
+  {
+    "objectID": "setup.html#adding-pressmark-to-an-existing-website",
+    "href": "setup.html#adding-pressmark-to-an-existing-website",
+    "title": "Setup Guide",
+    "section": "Adding Pressmark to an existing website",
+    "text": "Adding Pressmark to an existing website\nIf you already have a Quarto website and want to switch to the Pressmark theme, you can do so by following these steps:\n\nDownload the pressmark.scss from the GitHub Repo and add it to your website’s folder.\nNow, adjust your website’s _quarto.yml file to include the Pressmark theme. Add the following lines\n\nformat:\n  html:\n    theme: pressmark.scss\n\nUse the Pressmark features (e.g the Drop Caps from Typography), or adjust the colors\n\nRender your website and you should be good to go!\nAlternatively, if you already have a custom scss file, you can also import pressmark.scss into your existing scss file, and adjust the theme settings there.\n@import \"pressmark.scss\";\nYou’ll probably need to adjust some of your styles / layout to make it work with the Pressmark theme, but if you alread have a custom scss file, you probably know your way around CSS, so that shouldn’t be a problem.\n\nIrrespective of how you set up your website, it would be cool if you can attribute the theme by adding a link to the Docs, so that other people can find it and use it for their own projects. You can do this in the footer, or in the sidebar, or anywhere else you like."
+  },
+  {
+    "objectID": "setup.html#deploying-your-site-to-the-web",
+    "href": "setup.html#deploying-your-site-to-the-web",
+    "title": "Setup Guide",
+    "section": "Deploying your site to the web",
+    "text": "Deploying your site to the web\nThere are hundreds of ways to deploy some HTML files to the web, I found GitHub Pages to be the easiest and most straightforward way.\n\nGitHub Pages\nIf you used the GitHub Template, you can simply go to the “Settings” of your repository, scroll down to the “GitHub Pages” section, and select the branch you want to deploy from. As the template already includes a gh-pages workflow, you just need to push your changes to the main branch, and GitHub will take care of the rest.\nFor it to work, you need to select the gh-pages branch as the source for GitHub Pages. You don’t need to upload the _site folder to GitHub, so make sure it’s included in your .gitignore file.\nYour new website should be live within a few minutes at https://yourusername.github.io/yourrepositoryname/.\n\n\nUploading the HTML\nIf you don’t want to use GitHub Pages, you can also upload the generated HTML files in the _site folder to any web hosting service that supports static sites. Some popular options include Netlify, Vercel, and AWS S3.\nThis may seem easier at first, but if you want to update your website, you’ll need to re-upload the HTML files every time, which can be a bit of a hassle. So I recommend using GitHub Pages if you can, as it allows for easy updates and version control.\n\nAll of the above was just a very short introduction to get you started. For more detailed instructions, troubleshooting tips, and advanced features, check out the Quarto Documentation."
+  },
+  {
+    "objectID": "features/index.html",
+    "href": "features/index.html",
+    "title": "Features",
+    "section": "",
+    "text": "Scientific Advice\n\n\nSome tips for academics using Quarto\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMarkup Reference\n\n\nA showcase of what things look like with Pressmark\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTypography\n\n\nMore about typographic quirks like Smallcaps and Drop Caps\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nListings\n\n\nIntroduction to a very useful quarto feature\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCustomization\n\n\nMaking Pressmark work for you (e.g with a Dark Mode)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBanners and Table of Contents\n\n\nA more prominent way to present author, title and date in the title block\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "features/typography/index.html",
+    "href": "features/typography/index.html",
+    "title": "Typography",
+    "section": "",
+    "text": "Type Specimen for Universal type\n\n\nDrop caps are enlarged initial letters that appear at the beginning of a word, paragraph, or chapter. They extend several lines deep into the text and sit within the margins, causing the surrounding lines to wrap around them. This typographic style is commonly used in books and newspapers to add visual interest to a block of text. Wikipedia\nSmall caps are characters designed in the form of uppercase letters but set at a smaller size, typically matching the height of lowercase letters or text figures. They are often used to emphasize the opening words of a section or to create a subtle visual distinction within the text. Wikipedia\n\nPressmark provides markdown-native ways to create these typographic effects by repurposing rarely used styling conventions.\nTo apply small caps, wrap the text in ***. For example, writing ***Small caps*** will render as Small caps in your document.\nTo create drop caps, use the same syntax but mark the first letter as inline code. For example:\n***`D`rop caps*** are letters at the beginning of a word,\na chapter, or a paragraph that are larger than the rest of the text.\nSmall caps are often used immediately after a drop cap, as they provide a smoother visual transition from the enlarged initial letter into the rest of the paragraph (as shown above).\n\nIf you’re curious about the typography: Pressmark uses the beautiful Playfair Display type for headings, paired with Newsreader for text."
+  },
+  {
+    "objectID": "features/banners/index.html",
+    "href": "features/banners/index.html",
+    "title": "Banners and Table of Contents",
+    "section": "",
+    "text": "Banner\n  Table of Contents"
+  },
+  {
+    "objectID": "features/banners/index.html#banner",
+    "href": "features/banners/index.html#banner",
+    "title": "Banners and Table of Contents",
+    "section": "Banner",
+    "text": "Banner\nIf you want a more prominent, visually distinct title area—like the banner shown above—you can enable a title block banner on a per-document basis:\ntitle-block-banner: true\nThis adds a full-width header section that helps your page stand out and creates a clearer visual hierarchy for your title and metadata. For more details and customization options, see the Quarto documentation"
+  },
+  {
+    "objectID": "features/banners/index.html#table-of-contents",
+    "href": "features/banners/index.html#table-of-contents",
+    "title": "Banners and Table of Contents",
+    "section": "Table of Contents",
+    "text": "Table of Contents\nThis page demonstrates two types of tables of contents (TOC): a floating TOC on the right that follows your scroll position, and a fixed TOC at the top of the page.\nYou can control TOC behavior with several options (see the full reference):\ntoc: true\ntoc-depth: 2\ntoc-location: right-body  # alternatives: \"right\", \"left\", \"body\"\n\ntoc: Enables the table of contents.\ntoc-depth: Controls how many heading levels are included.\ntoc-location: Controls placement:\n\nright or left creates a floating sidebar TOC.\nbody places the TOC directly in the document.\nright-body combines both approaches.\n\n\nNote: Floating TOCs are not displayed on mobile devices. If it’s important that readers always have an overview of the page structure, consider including a body TOC as well."
+  },
+  {
+    "objectID": "features/academics/index.html",
+    "href": "features/academics/index.html",
+    "title": "Scientific Advice",
+    "section": "",
+    "text": "New York Public Library Floor Plan"
   },
   {
     "objectID": "features/markdown/index.html",
@@ -47,47 +117,5 @@
     "title": "Customization",
     "section": "Changing the font",
     "text": "Changing the font\nTo change the font, the easiest approach is to pick one from Google Fonts. For example, a clean sans-serif option for body text is Josefin Sans.\nImport the font in pressmark.scss and update the Bootstrap body font variable:\n@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap'); // sans-serif\n...\n$font-family-text: 'Josefin Sans', 'Georgia', 'Times New Roman', serif;\nYour site should now use the new font.\nNote: It’s recommended to keep the default fonts for headings and small caps. They’re carefully chosen to match the theme, and the CSS sizing is optimized for them."
-  },
-  {
-    "objectID": "features/banners/index.html",
-    "href": "features/banners/index.html",
-    "title": "Banners and Table of Contents",
-    "section": "",
-    "text": "Banner\n  Table of Contents"
-  },
-  {
-    "objectID": "features/banners/index.html#banner",
-    "href": "features/banners/index.html#banner",
-    "title": "Banners and Table of Contents",
-    "section": "Banner",
-    "text": "Banner\nIf you want a more prominent, visually distinct title area—like the banner shown above—you can enable a title block banner on a per-document basis:\ntitle-block-banner: true\nThis adds a full-width header section that helps your page stand out and creates a clearer visual hierarchy for your title and metadata. For more details and customization options, see the Quarto documentation"
-  },
-  {
-    "objectID": "features/banners/index.html#table-of-contents",
-    "href": "features/banners/index.html#table-of-contents",
-    "title": "Banners and Table of Contents",
-    "section": "Table of Contents",
-    "text": "Table of Contents\nThis page demonstrates two types of tables of contents (TOC): a floating TOC on the right that follows your scroll position, and a fixed TOC at the top of the page.\nYou can control TOC behavior with several options (see the full reference):\ntoc: true\ntoc-depth: 2\ntoc-location: right-body  # alternatives: \"right\", \"left\", \"body\"\n\ntoc: Enables the table of contents.\ntoc-depth: Controls how many heading levels are included.\ntoc-location: Controls placement:\n\nright or left creates a floating sidebar TOC.\nbody places the TOC directly in the document.\nright-body combines both approaches.\n\n\nNote: Floating TOCs are not displayed on mobile devices. If it’s important that readers always have an overview of the page structure, consider including a body TOC as well."
-  },
-  {
-    "objectID": "features/academics/index.html",
-    "href": "features/academics/index.html",
-    "title": "Scientific Advice",
-    "section": "",
-    "text": "New York Public Library Floor Plan"
-  },
-  {
-    "objectID": "features/typography/index.html",
-    "href": "features/typography/index.html",
-    "title": "Typography",
-    "section": "",
-    "text": "Type Specimen for Universal type\n\n\nDrop caps are enlarged initial letters that appear at the beginning of a word, paragraph, or chapter. They extend several lines deep into the text and sit within the margins, causing the surrounding lines to wrap around them. This typographic style is commonly used in books and newspapers to add visual interest to a block of text. Wikipedia\nSmall caps are characters designed in the form of uppercase letters but set at a smaller size, typically matching the height of lowercase letters or text figures. They are often used to emphasize the opening words of a section or to create a subtle visual distinction within the text. Wikipedia\n\nPressmark provides markdown-native ways to create these typographic effects by repurposing rarely used styling conventions.\nTo apply small caps, wrap the text in ***. For example, writing ***Small caps*** will render as Small caps in your document.\nTo create drop caps, use the same syntax but mark the first letter as inline code. For example:\n***`D`rop caps*** are letters at the beginning of a word,\na chapter, or a paragraph that are larger than the rest of the text.\nSmall caps are often used immediately after a drop cap, as they provide a smoother visual transition from the enlarged initial letter into the rest of the paragraph (as shown above).\n\nIf you’re curious about the typography: Pressmark uses the beautiful Playfair Display type for headings, paired with Newsreader for text."
-  },
-  {
-    "objectID": "features/index.html",
-    "href": "features/index.html",
-    "title": "Features",
-    "section": "",
-    "text": "Customization\n\n\nMaking Pressmark work for you (e.g with a Dark Mode)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nScientific Advice\n\n\nSome tips for academics using Quarto\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nListings\n\n\nIntroduction to a very useful quarto feature\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTypography\n\n\nMore about typographic quirks like Smallcaps and Drop Caps\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMarkup Reference\n\n\nA showcase of what things look like with Pressmark\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBanners and Table of Contents\n\n\nA more prominent way to present author, title and date in the title block\n\n\n\n\n\n\n\n\nNo matching items"
   }
 ]
