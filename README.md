@@ -4,9 +4,16 @@
 
 _Pressmark_ - an elegant, unobstrusive, typographic theme for Quarto websites. Inspired by newspapers like [The Atlantic](https://www.theatlantic.com/) and the [Financial Times](https://www.ft.com/) and shaped by [Edward Tufte's design principles](https://edwardtufte.github.io/tufte-css/). Made for sites centered around text that don't want to compromise on good design. Feauturing carefully selected fonts, well-thought-out default styles, and a bunch of quirks.
 
-[![GitHub](https://img.shields.io/badge/GitHub-000.svg?logo=github&logoColor=white)](https://github.com/skriptum/quarto-pressmark) [![ReadMe](https://img.shields.io/badge/Docs-018EF5?logo=readme&logoColor=fff)](https://mdwm.org/quarto-pressmark/) [![Showcase](https://img.shields.io/badge/Showcase-990f3d?logo=firefoxbrowser&logoColor=fff)](https://mdwm.org)
+---
 
-**About the name:**
+[GitHub](https://github.com/skriptum/quarto-pressmark) | [Docs](https://mdwm.org/quarto-pressmark/) | [Showcase](https://martenw.com)
+
+*if you like Pressmark, consider giving it a star on GitHub ⭐*
+
+---
+
+
+About the name:
 
 > **Pressmark** _noun_: A notation or figure in the margin of a printed sheet indicating the press on which it was printed. 
 >
@@ -27,18 +34,14 @@ quarto preview
 
 This should open your website in your browser. Now, adjust the content in the editor of your choice, and see it change in real time. For more detailed instructions, see the [Setup Guide](setup.qmd).
 
-## Features
+### Features
 
 - Support for Drop Caps and Small caps via markdown-native syntax (wrap it in `***Small caps***`)
-- Beautiful typography with carefully selected fonts and styles
+- Beautiful typography with carefully selected fonts
 - Customizable color scheme with light and dark option
-- Elegant styling for most markown elements (blockquotes, code blocks, tables, etc.) 
+- Elegant styling for most markown elements (blockquotes, code blocks, tables, etc.)
 
-## Links
 
-- [GitHub](https://github.com/skriptum/quarto-pressmark)
-- [Docs](https://mdwm.org/quarto-pressmark/)
-- [Showcase](https://martenw.com)
 
-Here's a preview of the homepage:
+---
 ![Preview of the Homepage on different devices](./static/mockup.png)
