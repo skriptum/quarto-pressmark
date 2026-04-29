@@ -14,27 +14,46 @@ listing:
     - "!/features/index.qmd"
     type: grid
     sort: "date desc"
-    fields: [image, date, title, description] 
+    fields: [image, title, description] 
 ---
 
-***`P`ressmark*** - an elegant, typographic theme for Quarto websites. Inspired by newspapers like [The Atlantic](https://www.theatlantic.com/) and the [Financial Times](https://www.ft.com/) as well as [Edward Tufte's design principles](https://edwardtufte.github.io/tufte-css/). Made for sites centered around text, that do not want to compromise on good design. Feauturing carefully selected fonts, well thought-trough default styling, and a bunch of quirks.
+::: {.content-block}
+
+***`P`ressmark*** - an elegant, unobstrusive, typographic theme for Quarto websites. Inspired by newspapers like [The Atlantic](https://www.theatlantic.com/) and the [Financial Times](https://www.ft.com/) and shaped by [Edward Tufte's design principles](https://edwardtufte.github.io/tufte-css/). Made for sites centered around text that don't want to compromise on good design. Feauturing carefully selected fonts, well-thought-out default styles, and a bunch of quirks.
 
 [`<button>GitHub</button>`{=html}](https://github.com/skriptum/quarto-pressmark)
-[`<button>Showcase</button>`{=html}](https://mdwm.org)
+[`<button>Showcase</button>`{=html}](https://martenw.com)
 
+<!-- ![](./static/logo-white.png) -->
 
+:::
 
-### Quickstart
-
-
-
-
-Learn more in the [Setup Guide](setup.qmd)
-
+:::: {.content-block}
 
 ### Features
 
 ::: {#listing-features}
+
+:::
+::::
+
+::: {.content-block}
+
+### Quickstart
+
+There are multiple ways to get started with the Pressmark theme. To dig deep into all of them, see the [Setup Guide](setup.qmd).
+
+If you're in a hurry: Go to the [Pressmark GitHub Repo](https://github.com/skriptum/quarto-pressmark), click the green "Code" button, select "Download ZIP", and extract the contents to a folder of your choice. 
+
+Make sure you have [Quarto](https://quarto.org/) installed, and navigate to the folder in your terminal. Then, run the following commands:
+
+```bash
+quarto render
+quarto preview
+```
+
+This should open your website in your browser. Now, adjust the content in the editor of your choice, and see it change in real time. For more detailed instructions, see the [Setup Guide](setup.qmd).
+
 
 :::
 
