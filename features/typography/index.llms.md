@@ -2,7 +2,7 @@
 
 More about typographic quirks like Smallcaps and Drop Caps
 
-![](specimen.png)
+![](specimen.jpg)
 
 Type Specimen for Universal type
 

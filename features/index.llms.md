@@ -2,10 +2,6 @@
 
 LOREM
 
-### [Scientific Advice](../features/academics/index.llms.md)
-
-Some tips for academics using Quarto
-
 ### [Markup Reference](../features/markdown/index.llms.md)
 
 A showcase of what things look like with Pressmark
@@ -21,6 +17,10 @@ Introduction to a very useful quarto feature
 ### [Customization](../features/customization/index.llms.md)
 
 Making Pressmark work for you (e.g with a Dark Mode)
+
+### [Quarto for Academics](../features/academics/index.llms.md)
+
+Some tips for scientists creating a personal website
 
 ### [Banners and Table of Contents](../features/banners/index.llms.md)
 

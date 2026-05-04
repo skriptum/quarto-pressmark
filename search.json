@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Quarto Pressmark",
     "section": "",
-    "text": "Pressmark - an elegant, unobstrusive, typographic theme for Quarto websites. Inspired by newspapers like The Atlantic and the Financial Times and shaped by Edward Tufte’s design principles. Made for sites centered around text that don’t want to compromise on good design. Feauturing carefully selected fonts, well-thought-out default styles, and a bunch of quirks.\nGitHub Showcase\n\n\n\nFeatures\n\n\n\n\n\n\n\n\nScientific Advice\n\n\nSome tips for academics using Quarto\n\n\n\n\n\n\n\n\n\n\nMarkup Reference\n\n\nA showcase of what things look like with Pressmark\n\n\n\n\n\n\n\n\n\n\nTypography\n\n\nMore about typographic quirks like Smallcaps and Drop Caps\n\n\n\n\n\n\n\n\n\n\nListings\n\n\nIntroduction to a very useful quarto feature\n\n\n\n\n\n\n\n\n\n\nCustomization\n\n\nMaking Pressmark work for you (e.g with a Dark Mode)\n\n\n\n\n\n\n\n\n\n\nBanners and Table of Contents\n\n\nA more prominent way to present author, title and date in the title block\n\n\n\n\n\nNo matching items\n\n\n\nQuickstart\nThere are multiple ways to get started with the Pressmark theme. To dig deep into all of them, see the Setup Guide.\nIf you’re in a hurry: Go to the Pressmark GitHub Repo, click the green “Code” button, select “Download ZIP”, and extract the contents to a folder of your choice.\nMake sure you have Quarto installed, and navigate to the folder in your terminal. Then, run the following commands:\nquarto render\nquarto preview\nThis should open your website in your browser. Now, adjust the content in the editor of your choice, and see it change in real time. For more detailed instructions, see the Setup Guide.\n\n\nPressmark noun: A notation or figure in the margin of a printed sheet indicating the press on which it was printed.\nThe American Heritage® Dictionary of the English Language, 5th Edition."
+    "text": "Pressmark - an elegant, unobstrusive, typographic theme for Quarto websites. Inspired by newspapers like The Atlantic and the Financial Times and shaped by Edward Tufte’s design principles. Made for sites centered around text that don’t want to compromise on good design. Feauturing carefully selected fonts, well-thought-out default styles, and a bunch of quirks.\nGitHub Showcase\n\n\n\nFeatures\n\n\n\n\n\n\n\n\nMarkup Reference\n\n\nA showcase of what things look like with Pressmark\n\n\n\n\n\n\n\n\n\n\nTypography\n\n\nMore about typographic quirks like Smallcaps and Drop Caps\n\n\n\n\n\n\n\n\n\n\nListings\n\n\nIntroduction to a very useful quarto feature\n\n\n\n\n\n\n\n\n\n\nCustomization\n\n\nMaking Pressmark work for you (e.g with a Dark Mode)\n\n\n\n\n\n\n\n\n\n\nQuarto for Academics\n\n\nSome tips for scientists creating a personal website\n\n\n\n\n\n\n\n\n\n\nBanners and Table of Contents\n\n\nA more prominent way to present author, title and date in the title block\n\n\n\n\n\nNo matching items\n\n\n\nQuickstart\nThere are multiple ways to get started with the Pressmark theme. To dig deep into all of them, see the Setup Guide.\nIf you’re in a hurry: Go to the Pressmark GitHub Repo, click the green “Code” button, select “Download ZIP”, and extract the contents to a folder of your choice.\nMake sure you have Quarto installed, and navigate to the folder in your terminal. Then, run the following commands:\nquarto render\nquarto preview\nThis should open your website in your browser. Now, adjust the content in the editor of your choice, and see it change in real time. For more detailed instructions, see the Setup Guide.\n\n\nPressmark noun: A notation or figure in the margin of a printed sheet indicating the press on which it was printed.\nThe American Heritage® Dictionary of the English Language, 5th Edition."
   },
   {
     "objectID": "setup.html",
@@ -39,7 +39,7 @@
     "href": "features/index.html",
     "title": "Features",
     "section": "",
-    "text": "Scientific Advice\n\n\nSome tips for academics using Quarto\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMarkup Reference\n\n\nA showcase of what things look like with Pressmark\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTypography\n\n\nMore about typographic quirks like Smallcaps and Drop Caps\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nListings\n\n\nIntroduction to a very useful quarto feature\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCustomization\n\n\nMaking Pressmark work for you (e.g with a Dark Mode)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBanners and Table of Contents\n\n\nA more prominent way to present author, title and date in the title block\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Markup Reference\n\n\nA showcase of what things look like with Pressmark\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTypography\n\n\nMore about typographic quirks like Smallcaps and Drop Caps\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nListings\n\n\nIntroduction to a very useful quarto feature\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCustomization\n\n\nMaking Pressmark work for you (e.g with a Dark Mode)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuarto for Academics\n\n\nSome tips for scientists creating a personal website\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBanners and Table of Contents\n\n\nA more prominent way to present author, title and date in the title block\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "features/typography/index.html",
@@ -72,9 +72,30 @@
   {
     "objectID": "features/academics/index.html",
     "href": "features/academics/index.html",
-    "title": "Scientific Advice",
+    "title": "Quarto for Academics",
     "section": "",
     "text": "New York Public Library Floor Plan"
+  },
+  {
+    "objectID": "features/academics/index.html#citable-articles",
+    "href": "features/academics/index.html#citable-articles",
+    "title": "Quarto for Academics",
+    "section": "Citable Articles",
+    "text": "Citable Articles\nIn Quarto, you can not only cite other works with the @bibkey notation, e.g Einstein (1905) or Turing (1936), but you can also create citeable articles.\nFor example, you can create a citation pattern for others to copy by inserting the citation keyword in your YAML Frontmatter:\ntitle: Quarto for Academics\ndescription: Some tips for scientists creating a personal website\ndate: \"2026\"\nauthor: \n  - name: Quarto Pressmark\n    url: https://mdwm.org/quarto-pressmark\ncitation: \n  url: https://mdwm.org/quarto-pressmark/academics\nIn the bottom of your webpage, Quarto will now automatically create a “Please cite as” and recommended BibTex Section (scroll down to Citation to take a look).\nIf you want to dig deeper into the different options for the citation, see the Quarto Docs)."
+  },
+  {
+    "objectID": "features/academics/index.html#google-scholar",
+    "href": "features/academics/index.html#google-scholar",
+    "title": "Quarto for Academics",
+    "section": "Google Scholar",
+    "text": "Google Scholar\nAnd if you wan’t your work to be indexable by Google Scholar, just add a google-scholar: true line to your YAML. A side benefit: Tools like Zotero Browser Connectors will automatically recognize it and offer to save it for visitors to your website."
+  },
+  {
+    "objectID": "features/academics/index.html#json-ld",
+    "href": "features/academics/index.html#json-ld",
+    "title": "Quarto for Academics",
+    "section": "JSON-LD",
+    "text": "JSON-LD\nThis is something I found in Hendrik Erz’s excellent guide to Academic Websites:\n\nThe thing is, you can link several different Twitter accounts on your website, and while us humans can easily see which one is your personal one, a machine cannot. JSON-LD really makes it obvious to web crawlers which links between different parts of the internet exist. With JSON-LD you can show which social media profiles are yours, which organization you are a part of, and which side projects are part of you.\n\nTo create your own JSON-LD, I recommend this easy generator. After you have your Schema, just paste it into your _quarto.yml like this:\nformat:\n  html:\n    theme: [pressmark.scss]\n    include-in-header: \n      text: |\n        &lt;script type=\"application/ld+json\"&gt;\n        {\n          \"@context\": \"https://schema.org/\",\n          \"@type\": \"Person\",\n          // ETC\n        &lt;/script&gt;\nEt voila, your website should now be much easier for machines to understand."
   },
   {
     "objectID": "features/markdown/index.html",

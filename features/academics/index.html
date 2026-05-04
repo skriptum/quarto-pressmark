@@ -6,9 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Some tips for academics using Quarto">
+<meta name="author" content="Quarto Pressmark">
+<meta name="dcterms.date" content="2026-04-01">
+<meta name="description" content="Some tips for scientists creating a personal website">
 
-<title>Scientific Advice – Quarto Pressmark</title>
+<title>Quarto for Academics – Quarto Pressmark</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -24,7 +26,61 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -74,12 +130,22 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<meta property="og:title" content="Scientific Advice – Quarto Pressmark">
-<meta property="og:description" content="Some tips for academics using Quarto">
+<meta property="og:title" content="Quarto for Academics – Quarto Pressmark">
+<meta property="og:description" content="Some tips for scientists creating a personal website">
 <meta property="og:image" content="https://mdwm.org/quarto-pressmark/features/academics/library.png">
 <meta property="og:site_name" content="Quarto Pressmark">
 <meta property="og:image:height" content="698">
 <meta property="og:image:width" content="800">
+<meta name="citation_title" content="Quarto for Academics">
+<meta name="citation_author" content="Quarto Pressmark">
+<meta name="citation_publication_date" content="2026-04-01">
+<meta name="citation_cover_date" content="2026-04-01">
+<meta name="citation_year" content="2026">
+<meta name="citation_online_date" content="2026-04-01">
+<meta name="citation_fulltext_html_url" content="https://mdwm.org/quarto-pressmark/academics">
+<meta name="citation_language" content="en">
+<meta name="citation_reference" content="citation_title=On the electrodynamics of moving bodies;,citation_author=Albert Einstein;,citation_publication_date=1905;,citation_cover_date=1905;,citation_year=1905;,citation_doi=10.1002/andp.19053221004;,citation_volume=17;,citation_journal_title=Annalen der Physik;">
+<meta name="citation_reference" content="citation_title=On computable numbers, with an application to the entscheidungsproblem;,citation_author=Alan M. Turing;,citation_publication_date=1936;,citation_cover_date=1936;,citation_year=1936;,citation_issue=1;,citation_doi=10.1112/plms/s2-42.1.230;,citation_volume=s2-42;,citation_journal_title=Proceedings of the London Mathematical Society;">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -129,19 +195,31 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Scientific Advice</h1>
+<h1 class="title">Quarto for Academics</h1>
 </div>
 
 <div>
   <div class="description">
-    Some tips for academics using Quarto
+    Some tips for scientists creating a personal website
   </div>
 </div>
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p><a href="https://mdwm.org/quarto-pressmark">Quarto Pressmark</a> </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">April 1, 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -150,17 +228,82 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-
+<nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#citable-articles" id="toc-citable-articles">Citable Articles</a></li>
+  <li><a href="#google-scholar" id="toc-google-scholar">Google Scholar</a></li>
+  <li><a href="#json-ld" id="toc-json-ld">JSON-LD</a></li>
+  </ul>
+</nav>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="library.png" class="img-fluid figure-img"></p>
 <figcaption>New York Public Library Floor Plan</figcaption>
 </figure>
 </div>
+<section id="citable-articles" class="level2">
+<h2 class="anchored" data-anchor-id="citable-articles">Citable Articles</h2>
+<p>In Quarto, you can not only cite other works with the <code>@bibkey</code> notation, e.g <span class="citation" data-cites="einstein1905">Einstein (<a href="#ref-einstein1905" role="doc-biblioref">1905</a>)</span> or <span class="citation" data-cites="turing1936">Turing (<a href="#ref-turing1936" role="doc-biblioref">1936</a>)</span>, but you can also create citeable articles.</p>
+<p>For example, you can create a citation pattern for others to copy by inserting the <code>citation</code> keyword in your YAML Frontmatter:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> Quarto for Academics</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">description</span><span class="kw">:</span><span class="at"> Some tips for scientists creating a personal website</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">date</span><span class="kw">:</span><span class="at"> </span><span class="st">"2026"</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">author</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Quarto Pressmark</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">url</span><span class="kw">:</span><span class="at"> https://mdwm.org/quarto-pressmark</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">citation</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">url</span><span class="kw">:</span><span class="at"> https://mdwm.org/quarto-pressmark/academics</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>In the bottom of your webpage, Quarto will now automatically create a “Please cite as” and recommended BibTex Section (scroll down to <a href="#citation">Citation</a> to take a look).</p>
+<p>If you want to dig deeper into the different options for the citation, see the <a href="https://quarto.org/docs/authoring/create-citeable-articles.html">Quarto Docs</a>).</p>
+</section>
+<section id="google-scholar" class="level2">
+<h2 class="anchored" data-anchor-id="google-scholar">Google Scholar</h2>
+<p>And if you wan’t your work to be indexable by Google Scholar, just add a <code>google-scholar: true</code> line to your YAML. A side benefit: Tools like Zotero Browser Connectors will automatically recognize it and offer to save it for visitors to your website.</p>
+</section>
+<section id="json-ld" class="level2">
+<h2 class="anchored" data-anchor-id="json-ld">JSON-LD</h2>
+<p>This is something I found in <a href="https://www.hendrik-erz.de/post/academic-website-v-telling-machines-who-you-are#h2-making-yourself-machine-readable-with-json-ld">Hendrik Erz’s excellent guide to Academic Websites</a>:</p>
+<blockquote class="blockquote">
+<p>The thing is, you can link several different Twitter accounts on your website, and while us humans can easily see which one is your personal one, a machine cannot. JSON-LD really makes it obvious to web crawlers which links between different parts of the internet exist. With JSON-LD you can show which social media profiles are yours, which organization you are a part of, and which side projects are part of you.</p>
+</blockquote>
+<p>To create your own JSON-LD, I recommend <a href="https://technicalseo.com/tools/schema-markup-generator/">this easy generator</a>. After you have your Schema, just paste it into your <code>_quarto.yml</code> like this:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">format</span><span class="kw">:</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">theme</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">pressmark.scss</span><span class="kw">]</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">include-in-header</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="fu">      text</span><span class="kw">: </span><span class="ch">|</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>        &lt;script type="application/ld+json"&gt;</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>        {</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>          "@context": "https://schema.org/",</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>          "@type": "Person",</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>          // ETC</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>        &lt;/script&gt;</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Et voila, your website should now be much easier for machines to understand.</p>
 
 
 
-</main> <!-- /main -->
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-einstein1905" class="csl-entry" role="listitem">
+Einstein, Albert. 1905. <span>“On the Electrodynamics of Moving Bodies.”</span> <em>Annalen Der Physik</em> 17: 891–921. <a href="https://doi.org/10.1002/andp.19053221004">https://doi.org/10.1002/andp.19053221004</a>.
+</div>
+<div id="ref-turing1936" class="csl-entry" role="listitem">
+Turing, Alan M. 1936. <span>“On Computable Numbers, with an Application to the Entscheidungsproblem.”</span> <em>Proceedings of the London Mathematical Society</em> s2-42 (1): 230–65. <a href="https://doi.org/10.1112/plms/s2-42.1.230">https://doi.org/10.1112/plms/s2-42.1.230</a>.
+</div>
+</div></section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{pressmark2026,
+  author = {Pressmark, Quarto},
+  title = {Quarto for {Academics}},
+  date = {2026-04-01},
+  url = {https://mdwm.org/quarto-pressmark/academics},
+  langid = {en}
+}
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-pressmark2026" class="csl-entry quarto-appendix-citeas" role="listitem">
+Pressmark, Quarto. 2026. <span>“Quarto for Academics.”</span> April 1.
+<a href="https://mdwm.org/quarto-pressmark/academics">https://mdwm.org/quarto-pressmark/academics</a>.
+</div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

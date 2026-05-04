@@ -4,10 +4,6 @@
 
 ### Features
 
-##### Scientific Advice
-
-Some tips for academics using Quarto
-
 ##### Markup Reference
 
 A showcase of what things look like with Pressmark
@@ -23,6 +19,10 @@ Introduction to a very useful quarto feature
 ##### Customization
 
 Making Pressmark work for you (e.g with a Dark Mode)
+
+##### Quarto for Academics
+
+Some tips for scientists creating a personal website
 
 ##### Banners and Table of Contents
 
