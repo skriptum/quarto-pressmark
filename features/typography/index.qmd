@@ -4,7 +4,7 @@ description: |
     More about typographic quirks like Smallcaps and Drop Caps
 ---
 
-![Type Specimen for Universal type](specimen.png)
+![Type Specimen for Universal type](specimen.jpg)
 
 ***`D`rop caps*** are enlarged initial letters that appear at the beginning of a word, paragraph, or chapter. They extend several lines deep into the text and sit within the margins, causing the surrounding lines to wrap around them. This typographic style is commonly used in books and newspapers to add visual interest to a block of text. [Wikipedia](https://en.wikipedia.org/wiki/Initial)
 
