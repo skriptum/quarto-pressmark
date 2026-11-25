@@ -1,24 +1,24 @@
-***`P`ressmark*** - an elegant, unobstrusive, typographic theme for Quarto websites. Inspired by newspapers like [The Atlantic](https://www.theatlantic.com/) and the [Financial Times](https://www.ft.com/) and shaped by [Edward Tufte’s design principles](https://edwardtufte.github.io/tufte-css/). Made for sites centered around text that don’t want to compromise on good design. Feauturing carefully selected fonts, well-thought-out default styles, and a bunch of quirks.
+***`P`ressmark*** - an elegant, minimalist, typographic theme for quarto websites. Inspired by newspapers like [The Atlantic](https://www.theatlantic.com/) and the [Financial Times](https://www.ft.com/) as well as by [Edward Tufte’s design principles](https://edwardtufte.github.io/tufte-css/). Made for text-focused sites, that don’t want to compromise on good design. Feauturing beautiful fonts, well-thought-out default styles, and a bunch of quirks.
 
 [GitHub](https://github.com/skriptum/quarto-pressmark) [Showcase](https://martenw.com)
 
 ### Features
 
-##### Typography
-
-More about typographic quirks like Smallcaps and Drop Caps
-
 ##### Customization
 
 Making Pressmark work for you (e.g with a Dark Mode)
 
-##### Listings
-
-Introduction to a very useful quarto feature
-
 ##### Markup Reference
 
 A showcase of what things look like with Pressmark
+
+##### Typography
+
+More about typographic quirks like Smallcaps and Drop Caps
+
+##### Listings
+
+Introduction to a very useful quarto feature
 
 ##### Quarto for Academics
 
