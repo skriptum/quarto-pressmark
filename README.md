@@ -2,7 +2,7 @@
 
 # Quarto Pressmark
 
-_Pressmark_ - an elegant, unobstrusive, typographic theme for Quarto websites. Inspired by newspapers like [The Atlantic](https://www.theatlantic.com/) and the [Financial Times](https://www.ft.com/) and shaped by [Edward Tufte's design principles](https://edwardtufte.github.io/tufte-css/). Made for sites centered around text that don't want to compromise on good design. Feauturing carefully selected fonts, well-thought-out default styles, and a bunch of quirks.
+_Pressmark_ - an elegant, minimalist, typographic theme for quarto websites. Inspired by newspapers like [The Atlantic](https://www.theatlantic.com/) and the [Financial Times](https://www.ft.com/) as well as by [Edward Tufte's design principles](https://edwardtufte.github.io/tufte-css/). Made for text-focused sites, that don't want to compromise on good design. Feauturing beautiful fonts, well-thought-out default styles, and a bunch of quirks.
 
 ---
 
