@@ -2,10 +2,10 @@
   {
     "listing": "/index.html",
     "items": [
-      "/features/markdown/index.html",
       "/features/typography/index.html",
-      "/features/listings/index.html",
       "/features/customization/index.html",
+      "/features/listings/index.html",
+      "/features/markdown/index.html",
       "/features/academics/index.html",
       "/features/banners/index.html"
     ]
@@ -13,10 +13,10 @@
   {
     "listing": "/features/index.html",
     "items": [
-      "/features/markdown/index.html",
       "/features/typography/index.html",
-      "/features/listings/index.html",
       "/features/customization/index.html",
+      "/features/listings/index.html",
+      "/features/markdown/index.html",
       "/features/academics/index.html",
       "/features/banners/index.html"
     ]

@@ -4,21 +4,21 @@
 
 ### Features
 
-##### Markup Reference
-
-A showcase of what things look like with Pressmark
-
 ##### Typography
 
 More about typographic quirks like Smallcaps and Drop Caps
+
+##### Customization
+
+Making Pressmark work for you (e.g with a Dark Mode)
 
 ##### Listings
 
 Introduction to a very useful quarto feature
 
-##### Customization
+##### Markup Reference
 
-Making Pressmark work for you (e.g with a Dark Mode)
+A showcase of what things look like with Pressmark
 
 ##### Quarto for Academics
 
